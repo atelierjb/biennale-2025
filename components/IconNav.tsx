@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import LangLink from './LangLink'
 
 type Props = {
@@ -41,11 +42,11 @@ export default function IconNav({ homeHref, langHref, daImgSrc, enImgSrc }: Prop
   return (
     <div ref={navRef} className="icon-nav fixed top-5 right-gutter z-[1001] flex flex-col items-center gap-4 max-nav:hidden">
       <a href={homeHref} className="flex items-center">
-        <img src="/icons/home-icon.svg" loading="lazy" alt="return to biennalen.dk" className="w-8 h-auto" />
+        <Image src="/icons/home-icon.svg" alt="return to biennalen.dk" width={32} height={32} className="w-8 h-auto" />
       </a>
       <LangLink href={langHref} className="flex flex-col items-center gap-1">
-        <img src={daImgSrc} loading="lazy" alt="" className="w-8 h-auto" />
-        <img src={enImgSrc} loading="lazy" alt="" className="w-8 h-auto" />
+        <Image src={daImgSrc} alt="" width={32} height={32} className="w-8 h-auto" />
+        <Image src={enImgSrc} alt="" width={32} height={32} className="w-8 h-auto" />
       </LangLink>
     </div>
   )

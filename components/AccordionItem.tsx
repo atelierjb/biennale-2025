@@ -25,9 +25,8 @@ export default function AccordionItem({ exhibitor, panelId, triggerId }: Props) 
         className="index-accordion-trigger flex items-center justify-between w-full py-5 text-left cursor-pointer border-t border-white gap-3 bg-transparent appearance-none [color:inherit] [font:inherit] rounded-none"
       >
         <div className="font-bold text-2xl/[1] md:text-3xl/[1] tracking-[-0.005em]">{exhibitor.artistName}</div>
-        <img
+        <Image
           src="/icons/plus.svg"
-          loading="lazy"
           alt=""
           width={20}
           height={20}

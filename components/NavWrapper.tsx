@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import LangLink from './LangLink'
 
 type Props = {
@@ -38,7 +39,7 @@ export default function NavWrapper({ homeHref, langHref, langImgSrc, langImgAlt,
   return (
     <div className="fixed top-0 left-0 right-0 z-[1000] flex items-start justify-between px-5 py-4 pointer-events-none max-sm:bg-gradient-to-b from-[#291e0f] to-transparent">
       <a href={homeHref} className="inline-flex items-center pointer-events-auto nav:hidden mt-[2vw]">
-        <img src="/icons/home-icon.svg" loading="lazy" alt="return to biennalen.dk" className="w-7 h-auto" />
+        <Image src="/icons/home-icon.svg" alt="return to biennalen.dk" width={28} height={28} className="w-7 h-auto" />
       </a>
 
       <a href="#hero" className="pointer-events-auto">
@@ -46,7 +47,7 @@ export default function NavWrapper({ homeHref, langHref, langImgSrc, langImgAlt,
       </a>
 
       <LangLink href={langHref} className="pointer-events-auto nav:hidden mt-[2vw]">
-        <img src={langImgSrc} loading="lazy" alt={langImgAlt} className="w-7 h-auto" />
+        <Image src={langImgSrc} alt={langImgAlt} width={28} height={28} className="w-7 h-auto" />
       </LangLink>
     </div>
   )

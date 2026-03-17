@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 type Props = {
   largeText: React.ReactNode
   col1: React.ReactNode
@@ -32,7 +34,7 @@ export default function IntroSection({
         <div className="text-base/[1.15] md:text-2xl/[1.15] font-semibold flex flex-col gap-4 md:pr-[2.5rem]">{col2}</div>
       </div>
 
-      <img src={badgeSrc} loading="lazy" alt={badgeAlt} width={140} height={140} className="w-full h-auto mb-24" />
+      <Image src={badgeSrc} alt={badgeAlt} width={140} height={140} className="w-full h-auto mb-24" />
 
       <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1">
         <div className="font-bold text-3xl/[1] md:text-4xl/[1]">{prizeLabel}</div>
