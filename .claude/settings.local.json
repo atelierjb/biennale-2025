@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 - <<'PYEOF'\nwith open\\('/Users/work/Sites/biennale-2025/reference/biennalen-for-kunsthandvaerk-design-2025.html', 'r', encoding='utf-8'\\) as f:\n    lines = f.readlines\\(\\)\n\n# Print lines 400-530 \\(hero section rest, intro section start\\)\nfor i, l in enumerate\\(lines[399:529], start=400\\):\n    print\\(f\"{i}: {l}\", end=''\\)\nPYEOF)",
+      "Bash(python3 - <<'PYEOF'\nwith open\\('/Users/work/Sites/biennale-2025/reference/biennalen-for-kunsthandvaerk-design-2025.html', 'r', encoding='utf-8'\\) as f:\n    lines = f.readlines\\(\\)\n\n# Print lines 530-650 \\(intro text + gallery section\\)\nfor i, l in enumerate\\(lines[529:649], start=530\\):\n    print\\(f\"{i}: {l}\", end=''\\)\nPYEOF)",
+      "Bash(python3 - <<'PYEOF'\nwith open\\('/Users/work/Sites/biennale-2025/reference/biennalen-for-kunsthandvaerk-design-2025.html', 'r', encoding='utf-8'\\) as f:\n    lines = f.readlines\\(\\)\n\n# Lines 649-800\nfor i, l in enumerate\\(lines[648:799], start=649\\):\n    print\\(f\"{i}: {l}\", end=''\\)\nPYEOF)",
+      "Bash(python3 - <<'PYEOF'\nwith open\\('/Users/work/Sites/biennale-2025/reference/biennalen-for-kunsthandvaerk-design-2025.html', 'r', encoding='utf-8'\\) as f:\n    lines = f.readlines\\(\\)\n\n# Lines 800-950\nfor i, l in enumerate\\(lines[799:949], start=800\\):\n    print\\(f\"{i}: {l}\", end=''\\)\nPYEOF)",
+      "Bash(python3 - <<'PYEOF'\nwith open\\('/Users/work/Sites/biennale-2025/reference/biennalen-for-kunsthandvaerk-design-2025.html', 'r', encoding='utf-8'\\) as f:\n    lines = f.readlines\\(\\)\n\n# Lines 949-1100\nfor i, l in enumerate\\(lines[948:1099], start=949\\):\n    print\\(f\"{i}: {l}\", end=''\\)\nPYEOF)",
+      "Bash(python3 - <<'PYEOF'\nwith open\\('/Users/work/Sites/biennale-2025/reference/biennalen-for-kunsthandvaerk-design-2025.html', 'r', encoding='utf-8'\\) as f:\n    lines = f.readlines\\(\\)\n\n# Lines 1100-1215\nfor i, l in enumerate\\(lines[1099:1214], start=1100\\):\n    print\\(f\"{i}: {l}\", end=''\\)\nPYEOF)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run:*)",
+      "WebFetch(domain:www.biennalen.dk)",
+      "Bash(curl -s \"https://www.biennalen.dk/\" | grep -i \"\\\\.css\\\\|@font-face\\\\|font-family\" | head -50)",
+      "WebFetch(domain:cdn.prod.website-files.com)",
+      "Bash(wc -l /Users/work/Sites/biennale-2025/reference/*.html)",
+      "Bash(curl -s \"https://www.biennalen.dk\" | head -300)",
+      "Bash(curl -s \"https://cdn.prod.website-files.com/651472ffd746bbfe11cf36c2/css/biennalen.webflow.shared.fc37bf8b6.css\" 2>&1 | head -500)",
+      "Bash(curl -s \"https://cdn.prod.website-files.com/651472ffd746bbfe11cf36c2/css/biennalen.webflow.shared.fc37bf8b6.css\" 2>&1 | grep -E \"\\(font-family|font-size|line-height|letter-spacing|font-weight|font-style|@font-face|serif|Georgia|Times|text-regular|large-text|medium-text|Red Hat|italic\\)\" | head -100)",
+      "Bash(curl -s \"https://cdn.prod.website-files.com/651472ffd746bbfe11cf36c2/css/biennalen.webflow.shared.fc37bf8b6.css\" 2>&1 | grep -E \"\\(text-regular|large-text|medium-text|\\\\.body|\\\\.paragraph|Red Hat|serif[^-]|Georgia|Times New|\\\\.text-\\)\" | head -60)",
+      "Bash(curl -s \"https://cdn.prod.website-files.com/651472ffd746bbfe11cf36c2/css/biennalen.webflow.shared.fc37bf8b6.css\")",
+      "Read(//tmp/**)",
+      "Bash(npx next:*)",
+      "Bash(cat /Users/work/Sites/biennale-2025/node_modules/lottie-web/package.json | python3 -c \"import sys,json; p=json.load\\(sys.stdin\\); print\\(json.dumps\\({k:p[k] for k in ['main','module','exports'] if k in p}, indent=2\\)\\)\")"
+    ]
+  }
+}

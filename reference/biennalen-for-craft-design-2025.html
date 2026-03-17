@@ -1,0 +1,2009 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Oct 22 2025 12:57:50 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="68e4dcad9893320b26c748f2" data-wf-site="651472ffd746bbfe11cf36c2">
+<head>
+  <meta charset="utf-8">
+  <title>Biennalen for Craft &amp; Design 2025</title>
+  <meta content="Celebrating 30 years with the Biennale for Craft &amp; Design, this anniversary exhibition is a tribute to both tradition and renewal." name="description">
+  <meta content="Biennalen for Craft &amp; Design 2025" property="og:title">
+  <meta content="Celebrating 30 years with the Biennale for Craft &amp; Design, this anniversary exhibition is a tribute to both tradition and renewal." property="og:description">
+  <meta content="https://cdn.prod.website-files.com/651472ffd746bbfe11cf36c2/68f4f8a7d7ca3dac6eaf1f68_opengraph-v2.png" property="og:image">
+  <meta content="Biennalen for Craft &amp; Design 2025" property="twitter:title">
+  <meta content="Celebrating 30 years with the Biennale for Craft &amp; Design, this anniversary exhibition is a tribute to both tradition and renewal." property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../css/biennalen.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Orbitron:regular,500,600,700,800,900","Battambang:100,300,regular,700,900:khmer,latin","Red Hat Display:300,regular,500,600,700,800,900"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../images/webclip.png" rel="apple-touch-icon"><!--  Finsweet Cookie Consent  -->
+  <script async="" src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" fs-cc-mode="opt-in">
+</script>
+  <!--  Global site tab (gtag.js) - Google Analytics  -->
+  <script type="fs-cc" async="" src="https://www.googletagmanager.com/gtag/js?id=G-YFB29W30ZZ"></script>
+  <script type="fs-cc">
+	window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YFB29W30ZZ');
+</script><!--  Block Google Fonts only on this page  -->
+  <script>
+  // Run early in <head>
+  (function(){
+    var q = document.querySelectorAll.bind(document);
+    ['link[rel="preconnect"][href*="fonts.gstatic"]',
+     'link[rel="preconnect"][href*="fonts.googleapis"]',
+     'link[href*="fonts.googleapis.com"]'
+    ].forEach(sel => q(sel).forEach(n => n.parentNode && n.parentNode.removeChild(n)));
+  })();
+</script>
+  <meta http-equiv="Content-Security-Policy" content="
+    style-src 'self' 'unsafe-inline' https://assets.website-files.com https://cdn.prod.website-files.com https://d3e54v103j8qbb.cloudfront.net;
+    font-src  'self' data: https://assets.website-files.com https://cdn.prod.website-files.com;
+  ">
+  <link rel="preload" href="../documents/biennale-brown-logo-xl-v4.json" as="fetch" crossorigin="" fetchpriority="high">
+  <style>
+.w-slider-dot {
+	width: 0.5rem;
+  height: 0.5rem;
+}
+/* DESKTOP NAVIGATION */ 
+.stacked-nav{ 
+	position: fixed;  top: 10rem; left: 1.5625rem; bottom: 1.5625rem; 
+  width: 260px; /* tweak */ 
+  display: flex; flex-direction: column; justify-content: space-between;
+  z-index: 1000; 
+  pointer-events: none;
+} 
+.stacked-nav a { 
+	pointer-events: auto; 
+} 
+.stacked-nav__top, .stacked-nav__bottom{ 
+	list-style: none; 
+  margin: 0; padding: 0; 
+} 
+.stacked-nav li{ 
+	display: flex; align-items: center; gap: .5rem; 
+  margin: .35rem 0; 
+} 
+.stacked-nav__float{ 
+	position:absolute; left:0; right:0; 
+  z-index:2; 
+  pointer-events:auto; 
+  transform: translateZ(0); will-change: transform; 
+} 
+.stacked-nav__float > li { 
+	margin: 0 !important; 
+} 
+.stacked-nav li.is-hidden{ 
+	visibility:hidden; 
+}
+.icon-wrap{ 
+	position:relative; 
+  width:1.5625rem; height:1.125rem; 
+  flex:0 0 24px; 
+} 
+.nav-icon{ 
+	position:absolute; inset:0; 
+  width:100%; height:100%; 
+  display:block; 
+}
+.nav-row{ 
+	--pill-fill:#291E0F; 
+  --digit-fill:#fff; 
+} 
+.nav-row[data-state="active"]{ 
+	--pill-fill:#fff; 
+  --digit-fill:#291E0F; 
+} 
+.nav-icon .pill { 
+	fill: var(--pill-fill); 
+  stroke:#fff; 
+} 
+.nav-icon .digit { 
+	fill: var(--digit-fill); 
+} 
+.nav-icon .pill, .nav-icon .digit { 
+	transition: fill .18s ease; 
+} 
+/* Desktop only (hide on <= 991px) */
+@media (max-width: 991px){
+  .stacked-nav{ display: none !important; }
+}
+</style>
+  <style>
+/* ACCORDION — base */
+.index-accordion{ display:grid; }
+/* Trigger */
+.index-accordion-trigger{
+  display:flex; align-items:center; justify-content:space-between;
+  width:100%; padding:1.25rem 0;
+  text-align:left; cursor:pointer;
+  text-decoration:none; color:inherit; background:none; border:0;
+  gap:.75rem;                    /* room between label and icon */
+}
+.index-accordion-trigger > *{ min-width:0; } /* let text shrink, don’t crush icon */
+/* Icon (Safari-safe) */
+.index-accordion-icon,
+.icon-rot{
+  display:inline-flex;
+  align-items:center; justify-content:center;
+  width:1.25rem; height:1.25rem;         /* explicit box */
+  flex:0 0 1.25rem;                       /* don’t grow/shrink */
+  transform-origin:50% 50%;
+  transform-box: fill-box;                /* critical for SVG in Safari */
+  will-change: transform;
+  pointer-events:none;                    /* clicks pass through */
+}
+.index-accordion-icon svg,
+.index-accordion-icon img,
+.icon-rot svg,
+.icon-rot img{
+  display:block;
+  width:100%; height:100%;
+}
+/* Panel + inner */
+.index-accordion-panel{
+  overflow:hidden;               /* clip while animating height */
+  width:100%;
+  max-width:100%;
+  box-sizing:border-box;
+}
+.index-accordion-panel__inner{
+  padding:0 0 1.25rem 0;
+  width:100%;
+  min-width:0;                   /* prevent min-content blowout */
+  box-sizing:border-box;
+}
+.image-landscape-new{
+	width: 66.91% !important;
+}
+.image-portrait-new{
+	width: 31.3% !important;
+}
+/* Keep “closed” panels measurable but invisible (Safari-friendly) */
+.index-accordion-panel[hidden]{
+  display:block !important;      /* allows measuring scrollHeight */
+  height:0 !important;
+  opacity:0 !important;
+  overflow:hidden !important;
+  padding:0 !important;
+}
+/* Media inside panels should never overflow */
+.index-accordion-panel img,
+.index-accordion-panel video,
+.index-accordion-panel svg,
+.index-accordion-panel iframe{
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+}
+/* --- Safari/Firefox overflow guards --- */
+.index .w-layout-grid,
+.index .w-row,
+.index .w-col,
+.index .w-container,
+.index .index-accordion,
+.index .index-accordion-item{
+  min-width:0;
+  min-height:0;
+}
+/* If a parent applies transforms, isolate layout (avoid contain: paint) */
+.index-accordion{ contain: layout; }
+/* ===========================================================
+   TWO-UP for .image-portrait-ratio (Safari-safe)
+   =========================================================== */
+.index-accordion-panel
+  :not(.w-slider, .w-slider-mask, .w-slide)
+  :has(> .image-portrait-ratio + .image-portrait-ratio){
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  gap: var(--two-up-gap, 16px);
+  min-width:0;
+}
+.index-accordion-panel
+  :not(.w-slider, .w-slider-mask, .w-slide)
+  :has(> .image-portrait-ratio + .image-portrait-ratio)
+  > .image-portrait-ratio{
+  flex: 1 1 0;
+  min-width:0;
+  max-width: calc(50% - var(--two-up-gap,16px)/2);
+}
+.index-accordion-panel .image-portrait-ratio picture,
+.index-accordion-panel .image-portrait-ratio > img{
+  display:block; width:100%; height:auto;
+}
+/* Mobile: stack to one column */
+@media (max-width: 767px){
+  .index-accordion-panel
+    :not(.w-slider, .w-slider-mask, .w-slide)
+    :has(> .image-portrait-ratio + .image-portrait-ratio){
+    gap: var(--two-up-gap, 12px);
+  }
+  .index-accordion-panel
+    :not(.w-slider, .w-slider-mask, .w-slide)
+    :has(> .image-portrait-ratio + .image-portrait-ratio)
+    > .image-portrait-ratio{
+    flex-basis:100%;
+    max-width:100%;
+  }
+}
+@media (max-width: 479px){
+  .image-landscape-new{
+    width: 100% !important;
+  }
+  .image-portrait-new{
+    width: 100% !important;
+  }
+}
+</style>
+</head>
+<body class="main">
+  <section class="intro-animation-overlay">
+    <div fetchpriority="high" class="logo-intro-animation" data-w-id="a83abd14-ec73-d0bf-daca-de47ee66dfda" data-animation-type="lottie" data-src="../documents/biennale-brown-logo-xl-v4.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="3"></div>
+  </section>
+  <div class="nav-wrapper">
+    <a href="../home.html" class="link-block w-inline-block"><img src="../images/home-icon.svg" loading="lazy" alt="return to biennalen.dk" class="image-16"></a>
+    <a href="#hero" class="link-to-top placed w-nav-brand">
+      <div loading="lazy" class="logo-animation-placed" data-w-id="5bbaeda1-87fe-5b04-7e33-92fd1b7b0b45" data-animation-type="lottie" data-src="../documents/biennale-white-logo-sm.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="16"></div>
+    </a>
+    <a href="../da/biennalen-for-kunsthandvaerk-design-2025.html" class="lang-icon w-inline-block"><img src="../images/eng-filled.svg" loading="lazy" alt="english language active" class="image-19"><img src="../images/da-outlined.svg" loading="lazy" alt="danish language inactive" class="image-20"></a>
+  </div>
+  <div class="stacked-nav">
+    <ul role="list" class="stacked-nav__top">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="stacked-nav__float"></div>
+    <ul role="list" class="stacked-nav__bottom">
+      <li data-state="idle" data-target="intro" class="nav-row">
+        <div class="icon-wrap">
+          <div class="nav-icon w-embed"><svg class="nav-icon" viewbox="0 0 21 16" aria-hidden="true">
+              <!--  path 1: the pill / ring  -->
+              <path class="pill" d="M10.1885 0.485352C12.905 0.485352 15.3499 1.29547 17.1035 2.58008C18.8576 3.86506 19.8926 5.59859 19.8926 7.46387C19.8925 9.32914 18.8576 11.0627 17.1035 12.3477C15.3499 13.6323 12.905 14.4424 10.1885 14.4424C7.47215 14.4423 5.02795 13.6322 3.27441 12.3477C1.52029 11.0627 0.485396 9.32917 0.485352 7.46387C0.485352 5.59853 1.52026 3.86508 3.27441 2.58008C5.02797 1.29553 7.47212 0.485421 10.1885 0.485352Z" stroke="#fff" stroke-width="0.970365"></path>
+              <!--  path 2: the number glyph  -->
+              <path class="digit" d="M10.0006 3.88281H11.2495V9.36925C11.2495 9.94565 11.2708 10.4794 11.3456 10.9277H9.70176V5.54796L8.34616 6.50862H8.28212V5.11032L10.0006 3.88281Z"></path>
+            </svg></div>
+        </div>
+        <a href="#intro" class="text-xs">introduction</a>
+      </li>
+      <li data-state="idle" data-target="gallery" class="nav-row">
+        <div class="icon-wrap">
+          <div class="nav-icon w-embed"><svg class="nav-icon" viewbox="0 0 21 16" aria-hidden="true">
+              <!--  path 1: the pill / ring  -->
+              <path class="pill" d="M10.1885 0.955078C12.905 0.955078 15.3499 1.7652 17.1035 3.0498C18.8576 4.33479 19.8926 6.06832 19.8926 7.93359C19.8925 9.79887 18.8576 11.5324 17.1035 12.8174C15.3499 14.102 12.905 14.9121 10.1885 14.9121C7.47215 14.912 5.02795 14.1019 3.27441 12.8174C1.52029 11.5324 0.485396 9.7989 0.485352 7.93359C0.485352 6.06825 1.52026 4.3348 3.27441 3.0498C5.02797 1.76525 7.47212 0.955148 10.1885 0.955078Z" stroke="#fff" stroke-width="0.970365"></path>
+              <!--  path 2: the number glyph  -->
+              <path class="digit" d="M8.25774 6.59359V5.13125C8.81279 4.62957 9.5066 4.35205 10.2431 4.35205C11.5453 4.35205 12.442 5.24867 12.442 6.56157C12.442 7.63965 11.8976 8.48289 10.7234 9.59299L10.0937 10.1374V10.2014H12.3459V11.5036H8.24707V10.3829L9.0156 9.65703C10.2858 8.3975 10.9262 7.54358 10.9262 6.70033C10.9262 6.02787 10.4993 5.57956 9.88019 5.57956C9.32515 5.57956 8.78077 5.9318 8.25774 6.59359Z"></path>
+            </svg></div>
+        </div>
+        <a href="#gallery" class="text-xs">gallery</a>
+      </li>
+      <li data-state="idle" data-target="index" class="nav-row">
+        <div class="icon-wrap">
+          <div class="nav-icon w-embed"><svg class="nav-icon" viewbox="0 0 21 16" aria-hidden="true">
+              <!--  path 1: the pill / ring  -->
+              <path class="pill" d="M10.1885 1.375C12.905 1.375 15.3499 2.18512 17.1035 3.46973C18.8576 4.75471 19.8926 6.48824 19.8926 8.35352C19.8925 10.2188 18.8576 11.9523 17.1035 13.2373C15.3499 14.5219 12.905 15.332 10.1885 15.332C7.47215 15.332 5.02795 14.5218 3.27441 13.2373C1.52029 11.9523 0.485396 10.2188 0.485352 8.35352C0.485352 6.48817 1.52026 4.75472 3.27441 3.46973C5.02797 2.18518 7.47212 1.37507 10.1885 1.375Z" stroke="#fff" stroke-width="0.970365"></path>
+              <!--  path 2: the number glyph  -->
+              <path class="digit" d="M10.7768 9.86299C10.7768 9.26524 10.3712 8.88098 9.85885 8.88098H9.45323V7.8029H9.80548C10.3072 7.8029 10.7234 7.46133 10.7234 6.87426C10.7234 6.32989 10.3285 5.999 9.82682 5.999C9.28245 5.999 8.75942 6.34056 8.30044 6.85292V5.47597C8.79144 5.01699 9.43189 4.77148 10.083 4.77148C11.2038 4.77148 12.1217 5.49732 12.1217 6.68213C12.1217 7.48268 11.7054 8.11245 11.0437 8.32593V8.34728C11.8015 8.58211 12.3032 9.23322 12.3032 10.0978C12.3032 11.336 11.3319 12.0298 10.1684 12.0298C9.47458 12.0298 8.78077 11.8057 8.24707 11.3253V9.94838C8.71673 10.4607 9.28245 10.7916 9.8375 10.7916C10.3925 10.7916 10.7768 10.4607 10.7768 9.86299Z"></path>
+            </svg></div>
+        </div>
+        <a href="#index" class="text-xs">exhibitors 2025</a>
+      </li>
+      <li data-state="idle" data-target="colophon" class="nav-row">
+        <div class="icon-wrap">
+          <div class="nav-icon w-embed"><svg class="nav-icon" viewbox="0 0 21 16" aria-hidden="true">
+              <!--  path 1: the pill / ring  -->
+              <path class="pill" d="M10.1885 0.794922C12.905 0.794922 15.3499 1.60504 17.1035 2.88965C18.8576 4.17463 19.8926 5.90816 19.8926 7.77344C19.8925 9.63871 18.8576 11.3723 17.1035 12.6572C15.3499 13.9418 12.905 14.752 10.1885 14.752C7.47215 14.7519 5.02795 13.9417 3.27441 12.6572C1.52029 11.3723 0.485396 9.63874 0.485352 7.77344C0.485352 5.9081 1.52026 4.17465 3.27441 2.88965C5.02797 1.6051 7.47212 0.794991 10.1885 0.794922Z" stroke="#fff" stroke-width="0.970365"></path>
+              <!--  path 2: the number glyph  -->
+              <path class="digit" d="M11.3291 11.2367H9.89873V9.58227H7.42236V8.19465L10.0909 4.19189H11.3291V8.44015H12.1296V9.58227H11.3291V11.2367ZM9.89873 6.26265L8.43639 8.44015H9.89873V6.26265Z"></path>
+            </svg></div>
+        </div>
+        <a href="#colophon" class="text-xs">colophon</a>
+      </li>
+    </ul>
+  </div>
+  <div class="icon-nav">
+    <a href="../home.html" class="link-block home-icon w-inline-block"><img src="../images/home-icon.svg" loading="lazy" alt="return to biennalen.dk" class="image-16"></a>
+    <a href="../da/biennalen-for-kunsthandvaerk-design-2025.html" class="lang-icon desktop w-inline-block"><img src="../images/da-outlined.svg" loading="lazy" alt="danish language inactive"><img src="../images/eng-filled.svg" loading="lazy" alt="english language active"></a>
+    <div class="w-embed">
+      <style>
+@media (min-width: 992px){
+  .icon-nav{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-4px); /* optional tiny lift */
+    transition: opacity .18s ease, transform .18s ease;
+  }
+  .icon-nav.is-on{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+  }
+}
+</style>
+    </div>
+  </div>
+  <section id="hero" data-section="hero" class="hero">
+    <div class="hero-code-embed w-embed">
+      <div class="hero-eye" data-speed="6" data-tilt="6" data-gyro="true" data-gyro-tilt="20" data-gyro-div="14" data-gyro-smooth="0.2" data-gyro-invert="true" data-grad-start="66.8%">
+        <div class="hero-eye__stage">
+          <svg class="hero-eye__svg" viewbox="0 0 1112 826" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <!--  Use your external SVG as a luminance mask  -->
+              <mask id="eyeMask" maskunits="userSpaceOnUse" x="0" y="0" width="1112" height="826">
+                <image href="https://cdn.prod.website-files.com/651472ffd746bbfe11cf36c2/68e7aebe22d753bcd0fb86e8_eye-shape.svg" x="0" y="0" width="1112" height="826" preserveaspectratio="xMidYMid meet">
+              </image></mask>
+              <radialgradient id="eyeVignette" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(556 413) rotate(90) scale(412.849 556)">
+                <stop offset="0.668269" stop-color="#291E0F" stop-opacity="0"></stop>
+                <stop offset="1" stop-color="#291E0F"></stop>
+              </radialgradient>
+            </defs>
+            <!--  Everything inside here is masked by the eye shape  -->
+            <g mask="url(#eyeMask)" id="eyeGroup">
+              <!--  IMAGES (stacked; GSAP can crossfade them)  -->
+              <image href="https://cdn.prod.website-files.com/651472ffd746bbfe11cf36c2/68f74f21a9c14f6de6476d0c_hero-image-1-v2.webp" x="0" y="0" width="1112" height="826" preserveaspectratio="xMidYMid slice" opacity="1" fetchpriority="high">
+              <image href="https://cdn.prod.website-files.com/651472ffd746bbfe11cf36c2/68f603b587dc80b84a78a69a_hero-image-2-v2.webp" x="0" y="0" width="1112" height="826" preserveaspectratio="xMidYMid slice" opacity="0">
+              <image href="https://cdn.prod.website-files.com/651472ffd746bbfe11cf36c2/68f603b4ff4feb8a86b52617_hero-image-3-v2.webp" x="0" y="0" width="1112" height="826" preserveaspectratio="xMidYMid slice" opacity="0">
+              <image href="https://cdn.prod.website-files.com/651472ffd746bbfe11cf36c2/68f603b55a78ba61611bd85b_hero-image-4-v2.webp" x="0" y="0" width="1112" height="826" preserveaspectratio="xMidYMid slice" opacity="0">
+              <image href="https://cdn.prod.website-files.com/651472ffd746bbfe11cf36c2/68f74f21de78bab680083c0a_hero-image-5.webp" x="0" y="0" width="1112" height="826" preserveaspectratio="xMidYMid slice" opacity="0">
+              <image href="https://cdn.prod.website-files.com/651472ffd746bbfe11cf36c2/68f74f2162102c0e6ea65a8f_hero-image-6.webp" x="0" y="0" width="1112" height="826" preserveaspectratio="xMidYMid slice" opacity="0">
+              <!--  VIGNETTE overlay (darker toward edge, never milky)  -->
+              <rect x="0" y="0" width="1112" height="826" fill="url(#eyeVignette)" style="mix-blend-mode:normal"></rect>
+            </image></image></image></image></image></image></g>
+          </svg>
+        </div>
+      </div>
+      <style>
+.hero-eye{
+  /*width: min(85vw, 1200px);*/
+  width: 100vw;
+  max-height: 95vh;
+  padding: 0 12vw;
+  margin: 7vh auto;
+  aspect-ratio: 1112 / 826;
+  perspective: 2000px;
+}
+.hero-eye__stage{
+  width: 100%; height: 100%;
+  transform-style: preserve-3d;
+  transform: translateZ(0);   /* force GPU & 3D context (Safari) */
+  will-change: transform;
+}
+.hero-eye__svg{ width: 100%; height: 100%; display:block; will-change: transform; }
+.hero-eye{ cursor: move; }
+@media (prefers-reduced-motion: reduce){
+  .hero-eye, .hero-eye__stage, .hero-eye__svg { transition: none !important; }
+}
+@media (hover:none), (pointer:coarse){
+  .hero-eye{ cursor: default; } /* no “hover” cursor on touch */
+}
+@media (max-width: 992px){
+ .hero-eye{ padding: 0 5vw; }
+}
+/* Nudge Safari/iOS to composite the masked layer + images */
+.hero-eye__svg #eyeGroup,
+.hero-eye__svg image{
+  will-change: opacity, transform;
+  transform: translateZ(0);           /* create its own layer */
+  backface-visibility: hidden;
+</style>
+    </div>
+    <div class="hero-logos">
+      <a href="https://dkod.dk/" target="_blank" class="logo-link w-inline-block"><img src="../images/kd-logo.png" loading="lazy" data-wf-target="[[[&quot;68e4dcad9893320b26c748f2&quot;,&quot;fbdc69cc-06a8-809b-0e62-431b521e38f2&quot;],[]]]" sizes="(max-width: 955px) 100vw, 955px" alt="partner logos" srcset="../images/kd-logo-p-500.png 500w, ../images/kd-logo-p-800.png 800w, ../images/kd-logo.png 955w" class="hero-logo-img"></a>
+      <a href="https://www.glaskunst.dk/" target="_blank" class="logo-link w-inline-block"><img src="../images/glas-logo.png" loading="lazy" sizes="(max-width: 667px) 100vw, 667px" srcset="../images/glas-logo-p-500.png 500w, ../images/glas-logo.png 667w" alt="partner logos" class="hero-logo-img"></a>
+      <a href="https://ukurant.com/" target="_blank" class="logo-link w-inline-block"><img src="../images/ukurant-logo.png" loading="lazy" sizes="(max-width: 605px) 100vw, 605px" srcset="../images/ukurant-logo-p-500.png 500w, ../images/ukurant-logo.png 605w" alt="partner logos" class="hero-logo-img"></a>
+    </div>
+    <div class="hero-details-right">
+      <div class="hero-details-dates">OCTober 9th –february 22nd</div>
+      <div class="hero-details-location">glas – museet for glaskunst<br>strandvejen 8, 8400 ebeltoft</div>
+      <div class="hero-logos mobile">
+        <a href="https://dkod.dk/" target="_blank" class="logo-link w-inline-block"><img src="../images/kd-logo.png" loading="lazy" sizes="(max-width: 955px) 100vw, 955px" srcset="../images/kd-logo-p-500.png 500w, ../images/kd-logo-p-800.png 800w, ../images/kd-logo.png 955w" alt="partner logos" class="hero-logo-img"></a>
+        <a href="https://www.glaskunst.dk/" target="_blank" class="logo-link w-inline-block"><img src="../images/glas-logo.png" loading="lazy" sizes="(max-width: 667px) 100vw, 667px" srcset="../images/glas-logo-p-500.png 500w, ../images/glas-logo.png 667w" alt="partner logos" class="hero-logo-img"></a>
+        <a href="https://ukurant.com/" target="_blank" class="logo-link w-inline-block"><img src="../images/ukurant-logo.png" loading="lazy" sizes="(max-width: 605px) 100vw, 605px" srcset="../images/ukurant-logo-p-500.png 500w, ../images/ukurant-logo.png 605w" alt="partner logos" class="hero-logo-img"></a>
+      </div>
+    </div>
+  </section>
+  <section id="intro" data-section="intro" class="intro">
+    <div class="large-text">The Biennale for Craft &amp; Design 2025 offers a look at what is preoccupying Danish makers and designers right now. The exhibition presents 26 current and experimental approaches to process, material and crafts in the fields of glass, ceramics, textile, paper craft, jewellery and furniture.</div>
+    <div class="_2-cols">
+      <div class="_2-cols text-regular">New techniques, such as gelled glass, 3D printing and digital weaving, meet traditional methods, such as jacquard weaving, glass blowing and woodcraft. Modern technologies are explored, and old methods and expressions are resumed, challenged and reinvented. Some pieces mix media, for example blending photo-realistic weaving with video. Others demonstrate circular approaches to design and craft in deconstructing used furniture or reviving residual materials from industry and previous projects in new pieces.<br><br>The exhibits reflect how the Biennale for Craft &amp; Design embraces both new talents and experienced practitioners. While some makers present techniques and crafts that they have been refining for decades, others challenge those same techniques with the new possibilities that digital tools have introduced into artistic and craft practices. <br><br>This exhibition marks the 30th anniversary of the Biennale and was curated and designed by Kamma Rosa Schytte, Kasper Kyster, Josefine Krabbe and Lærke Ryom – the founders of Ukurant. </div>
+      <div class="_2-cols text-regular">The Biennale for Craft &amp; Design is a living archive of experiences, experiments and craftsmanship, while Ukurant gives a voice to young designers who challenge the established understanding of craft and design. Glas – Museum of Glass Art has roots in the studio glass movement that arose during the 1960s and enabled artists and makers to work with glass on a smaller scale outside an industrial context. The movement was driven by curiosity, knowledge sharing and a strong professional community – an approach that paved the way for new artistic expressions and understandings of materials.<br><br>Ukurant, Glas and Danish Crafts &amp; Design Association jointly challenge, develop and present contemporary crafts and design at the Biennale. This collaboration combines tradition and renewal with a shared vision of promoting crafts, exploring the potential of materials and generating new perspectives through a collective effort.</div>
+    </div><img src="../images/30-years-white.svg" loading="lazy" alt="30 years anniversary mark" class="image-4">
+    <div class="_2-cols">
+      <div class="medium-text">The award committee has selected the recipient of the 2025 Biennale Award.</div>
+      <div class="text-wrapper-prize">
+        <div class="nominee-textbox">
+          <div class="text-xs">nominees</div>
+          <div class="nominee-text-style">Emilie Palle Holm, Lone Løvschal &amp; Lotte Westphael.</div>
+        </div>
+        <div class="nominee-textbox">
+          <div class="text-xs">winner of the 2025 prize</div>
+          <div class="nominee-text-style big">Lone Løvschal</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery" data-section="gallery" class="gallery">
+    <div class="medium-text titles">Gallery:</div>
+    <div data-start="1" tabindex="0" class="index-gallery">
+      <div class="index-gallery-viewport">
+        <div class="index-gallery-track">
+          <div class="index-slide"><img src="../images/1-gallery-image-landscape-v3.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 1020.7166748046875px" srcset="../images/1-gallery-image-landscape-v3-p-500.jpg 500w, ../images/1-gallery-image-landscape-v3-p-800.jpg 800w, ../images/1-gallery-image-landscape-v3-p-1080.jpg 1080w, ../images/1-gallery-image-landscape-v3-p-1600.jpg 1600w, ../images/1-gallery-image-landscape-v3.jpg 1670w" alt="image from the exhibition" class="index-slide-img">
+            <div class="index-caption">This is some text inside of a div block.</div>
+          </div>
+          <div class="index-slide"><img src="../images/3-gallery-image-portrait.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, 550.316650390625px" srcset="../images/3-gallery-image-portrait-p-500.jpg 500w, ../images/3-gallery-image-portrait-p-800.jpg 800w, ../images/3-gallery-image-portrait-p-1080.jpg 1080w, ../images/3-gallery-image-portrait.jpg 1200w" alt="image from the exhibition" class="index-slide-img">
+            <div class="index-caption">This is some text inside of a div block.</div>
+          </div>
+          <div class="index-slide"><img src="../images/2-gallery-image-landscape.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 1020.8333129882812px" srcset="../images/2-gallery-image-landscape-p-500.jpg 500w, ../images/2-gallery-image-landscape-p-800.jpg 800w, ../images/2-gallery-image-landscape-p-1080.jpg 1080w, ../images/2-gallery-image-landscape-p-1600.jpg 1600w, ../images/2-gallery-image-landscape-p-2000.jpg 2000w, ../images/2-gallery-image-landscape.jpg 2226w" alt="image from the exhibition" class="index-slide-img">
+            <div class="index-caption">This is some text inside of a div block.</div>
+          </div>
+          <div class="index-slide"><img src="../images/4-gallery-image-portrait.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, 550.316650390625px" srcset="../images/4-gallery-image-portrait-p-500.jpg 500w, ../images/4-gallery-image-portrait-p-800.jpg 800w, ../images/4-gallery-image-portrait-p-1080.jpg 1080w, ../images/4-gallery-image-portrait.jpg 1200w" alt="image from the exhibition" class="index-slide-img">
+            <div class="index-caption">This is some text inside of a div block.</div>
+          </div>
+          <div class="index-slide"><img src="../images/5-gallery-image-portrait.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, 550.316650390625px" srcset="../images/5-gallery-image-portrait-p-500.jpg 500w, ../images/5-gallery-image-portrait-p-800.jpg 800w, ../images/5-gallery-image-portrait-p-1080.jpg 1080w, ../images/5-gallery-image-portrait.jpg 1200w" alt="image from the exhibition" class="index-slide-img">
+            <div class="index-caption">This is some text inside of a div block.</div>
+          </div>
+          <div class="index-slide"><img src="../images/6-gallery-image-landscape-v2.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 1020.8333129882812px" srcset="../images/6-gallery-image-landscape-v2-p-500.jpg 500w, ../images/6-gallery-image-landscape-v2-p-800.jpg 800w, ../images/6-gallery-image-landscape-v2-p-1080.jpg 1080w, ../images/6-gallery-image-landscape-v2-p-1600.jpg 1600w, ../images/6-gallery-image-landscape-v2-p-2000.jpg 2000w, ../images/6-gallery-image-landscape-v2.jpg 2226w" alt="image from the exhibition" class="index-slide-img">
+            <div class="index-caption">This is some text inside of a div block.</div>
+          </div>
+          <div class="index-slide"><img src="../images/7-gallery-image-landscape.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 1020.8333740234375px" srcset="../images/7-gallery-image-landscape-p-500.jpg 500w, ../images/7-gallery-image-landscape-p-800.jpg 800w, ../images/7-gallery-image-landscape-p-1080.jpg 1080w, ../images/7-gallery-image-landscape-p-1600.jpg 1600w, ../images/7-gallery-image-landscape-p-2000.jpg 2000w, ../images/7-gallery-image-landscape.jpg 2226w" alt="image from the exhibition" class="index-slide-img">
+            <div class="index-caption">This is some text inside of a div block.</div>
+          </div>
+          <div class="index-slide"><img src="../images/8-gallery-image-portrait-v2.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, 550.316650390625px" srcset="../images/8-gallery-image-portrait-v2-p-500.jpg 500w, ../images/8-gallery-image-portrait-v2-p-800.jpg 800w, ../images/8-gallery-image-portrait-v2-p-1080.jpg 1080w, ../images/8-gallery-image-portrait-v2.jpg 1200w" alt="image from the exhibition" class="index-slide-img">
+            <div class="index-caption">This is some text inside of a div block.</div>
+          </div>
+          <div class="index-slide"><img src="../images/9-gallery-image-landscape.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 1020.8333129882812px" srcset="../images/9-gallery-image-landscape-p-500.jpg 500w, ../images/9-gallery-image-landscape-p-800.jpg 800w, ../images/9-gallery-image-landscape-p-1080.jpg 1080w, ../images/9-gallery-image-landscape-p-1600.jpg 1600w, ../images/9-gallery-image-landscape-p-2000.jpg 2000w, ../images/9-gallery-image-landscape.jpg 2226w" alt="image from the exhibition" class="index-slide-img">
+            <div class="index-caption">This is some text inside of a div block.</div>
+          </div>
+          <div class="index-slide"><img src="../images/10-gallery-image-landscape.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 1020.8333129882812px" srcset="../images/10-gallery-image-landscape-p-500.jpg 500w, ../images/10-gallery-image-landscape-p-800.jpg 800w, ../images/10-gallery-image-landscape-p-1080.jpg 1080w, ../images/10-gallery-image-landscape-p-1600.jpg 1600w, ../images/10-gallery-image-landscape-p-2000.jpg 2000w, ../images/10-gallery-image-landscape.jpg 2226w" alt="image from the exhibition" class="index-slide-img">
+            <div class="index-caption">This is some text inside of a div block.</div>
+          </div>
+          <div class="index-slide"><img src="../images/11-gallery-image-landscape-v3.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 1020.7166748046875px" srcset="../images/11-gallery-image-landscape-v3-p-500.jpg 500w, ../images/11-gallery-image-landscape-v3-p-800.jpg 800w, ../images/11-gallery-image-landscape-v3-p-1080.jpg 1080w, ../images/11-gallery-image-landscape-v3-p-1600.jpg 1600w, ../images/11-gallery-image-landscape-v3.jpg 1670w" alt="image from the exhibition" class="index-slide-img">
+            <div class="index-caption">This is some text inside of a div block.</div>
+          </div>
+          <div class="index-slide"><img src="../images/12-gallery-image-landscape-v3.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 1020.7166748046875px" srcset="../images/12-gallery-image-landscape-v3-p-500.jpg 500w, ../images/12-gallery-image-landscape-v3-p-800.jpg 800w, ../images/12-gallery-image-landscape-v3-p-1080.jpg 1080w, ../images/12-gallery-image-landscape-v3-p-1600.jpg 1600w, ../images/12-gallery-image-landscape-v3.jpg 1670w" alt="image from the exhibition" class="index-slide-img">
+            <div class="index-caption">This is some text inside of a div block.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-embed">
+      <style>
+.gallery{ overflow-x: hidden; }
+.index-gallery{
+  --gap: 28px;
+  --rowH: min(62vh, 720px);
+  --fadeColor: #291E0F;
+  --fadeW: clamp(96px, 16vw, 256px);
+  position: relative;
+}
+/* mask/viewport */
+.index-gallery-viewport{
+  overflow: hidden;
+  width: 100%;
+  touch-action: pan-y;          /* allow vertical page scroll */
+}
+/* side gradients (overlays) */
+.index-gallery::before,
+.index-gallery::after{
+  content:"";
+  position:absolute; top:0; bottom:0;
+  width: var(--fadeW);
+  pointer-events:none; z-index:3;
+}
+.index-gallery::before{
+  left:0;
+  background: linear-gradient(to right, var(--fadeColor), rgba(41,30,15,0));
+}
+.index-gallery::after{
+  right:0;
+  background: linear-gradient(to left,  var(--fadeColor), rgba(41,30,15,0));
+}
+.index-gallery { overscroll-behavior-x: contain; }
+/* (optional) make the gallery focusable for keyboard control */
+.index-gallery{ outline:none; }
+.index-gallery:focus-visible{ outline: 2px solid rgba(255,255,255,.35); outline-offset: 4px; }
+/* track + slides */
+.index-gallery-track{
+  display: flex;
+  align-items: flex-end;
+  gap: var(--gap);
+  will-change: transform;
+  cursor: grab;
+  position: relative; z-index: 1;
+  /* IMPORTANT for Firefox touch/pointer: this clarifies we pan horizontally here */
+  touch-action: pan-x;
+  -ms-touch-action: pan-x;
+}
+.index-gallery-track.is-dragging{ cursor: grabbing; }
+/* Prevent native image drag/select stealing the drag in Firefox */
+.index-gallery-track,
+.index-gallery-track *{
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.index-slide{
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.index-slide-img{
+  height: var(--rowH);
+  width: auto;
+  display: block;
+  object-fit: cover;
+}
+.index-caption{ margin-top: 10px; }
+@media (max-width: 640px){
+  .index-gallery{ --rowH: 40vh; --gap: 16px; }
+}
+</style>
+    </div>
+  </section>
+  <section id="index" data-section="index" class="index">
+    <div data-accordion="single" class="index-accordion">
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Anna Søgaard &amp; Tronhjem Rømer</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-1" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images">
+              <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/1-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/1-exhibition-landscape_1-p-500.jpg 500w, ../images/1-exhibition-landscape_1-p-800.jpg 800w, ../images/1-exhibition-landscape_1-p-1080.jpg 1080w, ../images/1-exhibition-landscape_1-p-1600.jpg 1600w, ../images/1-exhibition-landscape_1-p-2000.jpg 2000w, ../images/1-exhibition-landscape_1.jpg 2226w" alt="LUMINOUS LAYERS by Anna Søgaard &amp; Trondhjem Rømer" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/1-exhibition-landscape_2.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/1-exhibition-landscape_2-p-500.jpg 500w, ../images/1-exhibition-landscape_2-p-800.jpg 800w, ../images/1-exhibition-landscape_2-p-1080.jpg 1080w, ../images/1-exhibition-landscape_2-p-1600.jpg 1600w, ../images/1-exhibition-landscape_2-p-2000.jpg 2000w, ../images/1-exhibition-landscape_2.jpg 2226w" alt="LUMINOUS LAYERS by Anna Søgaard &amp; Trondhjem Rømer" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">LUMINOUS LAYERS</div>
+                <div class="index-accordion-panel__inner-details">Textile print, wood, steel, LED and wire <br>(600 x 700 x 50 mm) x 3</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">The project consists of tree identical pieces that explore the relationship between colour and light through a transformative weight-based principle, in which layers of textiles are staggered and new compositions take shape. This gives rise to a sensuous experience, as the light creates new colour blends of varying intensity across the textile surface. Four layers of textile are arranged above a floating structure with integrated lights.<br><br>In an exchange of approaches from their professional fields, Anna Søgaard &amp; Tronhjem Rømer have explored colour phenomena and weight principles that cause the elements of the piece to reflect and highlight each other. Textile and construction are connected in the interplay of perspectives.<br><br>Thanks to Frederik Gustav for technical advice.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Elly Feldstein</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-2" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images"><img src="../images/2-exhibition-portrait_1-new.jpg" loading="lazy" sizes="(max-width: 900px) 100vw, 900px" srcset="../images/2-exhibition-portrait_1-new.jpg 500w, ../images/2-exhibition-portrait_1-new.jpg 800w, ../images/2-exhibition-portrait_1-new.jpg 900w" alt="THE TRACES WE MAKE by Elly Feldstein" class="image-portrait-ratio hidden"><img src="../images/2-exhibition-portrait_2-new.jpg" loading="lazy" sizes="(max-width: 900px) 100vw, 900px" srcset="../images/2-exhibition-portrait_2-new.jpg 500w, ../images/2-exhibition-portrait_2-new.jpg 800w, ../images/2-exhibition-portrait_2-new.jpg 900w" alt="THE TRACES WE MAKE by Elly Feldstein" class="image-portrait-ratio hidden">
+              <div data-delay="4000" data-animation="slide" class="slider portrait w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/2-exhibition-portrait_1-new.jpg" loading="lazy" sizes="(max-width: 900px) 100vw, 900px" srcset="../images/2-exhibition-portrait_1-new.jpg 500w, ../images/2-exhibition-portrait_1-new.jpg 800w, ../images/2-exhibition-portrait_1-new.jpg 900w" alt="THE TRACES WE MAKE by Elly Feldstein" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/2-exhibition-portrait_2-new.jpg" loading="lazy" sizes="(max-width: 900px) 100vw, 900px" srcset="../images/2-exhibition-portrait_2-new.jpg 500w, ../images/2-exhibition-portrait_2-new.jpg 800w, ../images/2-exhibition-portrait_2-new.jpg 900w" alt="THE TRACES WE MAKE by Elly Feldstein" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">THE TRACES WE MAKE</div>
+                <div class="index-accordion-panel__inner-details">Oak, teak, stainless steel and recycled aluminium<br> <br>Chair: 1350 x 340 x 450 mm<br>Table: 720 x 600 x 430 mm<br>Lamp: 540 x 250 x 180 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">In a world that is moving much too fast and where technology is growing ever more influential, the piece examines the traces we make on our objects. It demonstrates the value of discarded materials by highlighting their inherent history, craftsmanship and materiality.<br> <br>Elly Feldstein uses AI technology in her design process to optimize the use of materials and calculate her climate footprint. The piece consists of three sensuous everyday objects that convey our physical and climate-related impact.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Emilie Palle Holm</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-3" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images">
+              <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/3-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/3-exhibition-landscape_1-p-500.jpg 500w, ../images/3-exhibition-landscape_1-p-800.jpg 800w, ../images/3-exhibition-landscape_1-p-1080.jpg 1080w, ../images/3-exhibition-landscape_1-p-1600.jpg 1600w, ../images/3-exhibition-landscape_1-p-2000.jpg 2000w, ../images/3-exhibition-landscape_1.jpg 2226w" alt="WOVEN VOXEL by Emilie Palle Holm" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/3-exhibition-landscape_2.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/3-exhibition-landscape_2-p-500.jpg 500w, ../images/3-exhibition-landscape_2-p-800.jpg 800w, ../images/3-exhibition-landscape_2-p-1080.jpg 1080w, ../images/3-exhibition-landscape_2-p-1600.jpg 1600w, ../images/3-exhibition-landscape_2-p-2000.jpg 2000w, ../images/3-exhibition-landscape_2.jpg 2226w" alt="WOVEN VOXEL by Emilie Palle Holm" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">WOVEN VOXEL</div>
+                <div class="index-accordion-panel__inner-details">Cotton and polyester <br><br>Piece 01: WOVEN VOXEL [ 6.9.4 ]<br>H: 2200 mm,  L: 1500 mm, D: 35 mm <br><br>Piece 02: WOVEN VOXEL [ 5.8.12 ]<br>H: 2200 mm, L: 1500 mm, D: 1200 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">Jacquard weaving is a pixel-based (picture element) textile technique. Each pixel represents the interlacement of a warp and a weft thread. Like traditional woven textiles, pixels are bound to two dimensions. In ‘Woven Voxel’, Emilie Palle Holm innovatively challenges this continuity by expanding jacquard-woven constructions into the third dimension, forming intriguing woven voxels (volume elements) and shifting the format of weaving from surface to sculpture.<br><br>By embedding form-transformable mechanisms directly in the interlacement of warp and weft, she creates material and form simultaneously on the loom. By cutting selected warp floats, she causes the two-dimensional structures to unfold into spacious textile formations where visual shape and colour elements emphasize the physical depth.‘Woven Voxel’ operates in the liminal space between two and three dimensions, uncovering the spatial potential of weaving.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Et Arrangement</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-4" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images">
+              <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/4-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/4-exhibition-landscape_1-p-500.jpg 500w, ../images/4-exhibition-landscape_1-p-800.jpg 800w, ../images/4-exhibition-landscape_1-p-1080.jpg 1080w, ../images/4-exhibition-landscape_1-p-1600.jpg 1600w, ../images/4-exhibition-landscape_1-p-2000.jpg 2000w, ../images/4-exhibition-landscape_1.jpg 2226w" alt="(SN) SHRINE BORE by Et Arrangement" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/4-exhibition-landscape_2.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/4-exhibition-landscape_2-p-500.jpg 500w, ../images/4-exhibition-landscape_2-p-800.jpg 800w, ../images/4-exhibition-landscape_2-p-1080.jpg 1080w, ../images/4-exhibition-landscape_2-p-1600.jpg 1600w, ../images/4-exhibition-landscape_2-p-2000.jpg 2000w, ../images/4-exhibition-landscape_2.jpg 2226w" alt="(SN) SHRINE BORE by Et Arrangement" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">(sn) Shrine BORE</div>
+                <div class="index-accordion-panel__inner-details">Tin, excess material and discarded, ruined tin objects<br>‍<br>70 x 210 x 290 mm<br>3.844 kg</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">In ‘(sn) shrine BORE ’, Et Arrangement examines our relationship with incontrollable processes through the lifecycle of the woodboring beetle, which leaves patterns under the bark. These traces symbolize nature’s slow and unseen transformations. The notion of a shrine – an object that traditionally preserves things – as both an object and a metaphor challenges our urge for control. The piece suggests that it is in our encounter with the incontrollable that we learn to appreciate life’s unseen but significant processes.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Grethe Sørensen</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-5" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images">
+              <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/5-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/5-exhibition-landscape_1-p-500.jpg 500w, ../images/5-exhibition-landscape_1-p-800.jpg 800w, ../images/5-exhibition-landscape_1-p-1080.jpg 1080w, ../images/5-exhibition-landscape_1-p-1600.jpg 1600w, ../images/5-exhibition-landscape_1-p-2000.jpg 2000w, ../images/5-exhibition-landscape_1.jpg 2226w" alt="TRANSLUCENCE by Grethe Sørensen" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/5-exhibition-landscape_2.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/5-exhibition-landscape_2-p-500.jpg 500w, ../images/5-exhibition-landscape_2-p-800.jpg 800w, ../images/5-exhibition-landscape_2-p-1080.jpg 1080w, ../images/5-exhibition-landscape_2-p-1600.jpg 1600w, ../images/5-exhibition-landscape_2-p-2000.jpg 2000w, ../images/5-exhibition-landscape_2.jpg 2226w" alt="TRANSLUCENCE by Grethe Sørensen" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">TRANSLUCENCE</div>
+                <div class="index-accordion-panel__inner-details">Jacquard-woven rug with video projection (3-minute loop)<br>‍<br>Trevira CS, wool, viscose, organic cotton and polyester<br>‍<br>1650 x 2850 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">Light is a key source of inspiration, and sunlight and nature are recurring elements in Grethe Sørensen’s work. Nature is always changing and in motion, never standing quite still. The refraction of sunlight in shallow water paints glowing patterns of light on the seabed, reflections of the eternal motion of the sea – universal patterns and shapes, created by nature.<br> <br>This project is based on video recordings of the patterns and movements of light. The image on the rug, a still from the video, has been digitally converted into primary-colour pixels. In her weaving, Grethe Sørensen replaces every single pixel in the digital image with a thread in the same colour: the image is reproduced thread by thread in yarn of the same primary colours, so that the woven rug preserves the character of the ethereal light. <br>‍<br>A meditative slow-motion sequence of movements of light has been processed into a three-minute video loop that is projected on to the weave. The video gradually appears and plays in a slow flow until it fades out, and only the rug remains – fully illuminated.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Indio Möglich</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-6" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images"><img src="../images/6-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/6-exhibition-portrait_1-p-500.jpg 500w, ../images/6-exhibition-portrait_1-p-800.jpg 800w, ../images/6-exhibition-portrait_1-p-1080.jpg 1080w, ../images/6-exhibition-portrait_1.jpg 1200w" alt="Aerodynamics is for those who can’t build engines by Indio Möglich" class="image-portrait-ratio hidden"><img src="../images/6-exhibition-portrait_3.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/6-exhibition-portrait_3-p-500.jpg 500w, ../images/6-exhibition-portrait_3-p-800.jpg 800w, ../images/6-exhibition-portrait_3-p-1080.jpg 1080w, ../images/6-exhibition-portrait_3.jpg 1200w" alt="Aerodynamics is for those who can’t build engines by Indio Möglich" class="image-portrait-ratio hidden">
+              <div data-delay="4000" data-animation="slide" class="slider portrait w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/6-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/6-exhibition-portrait_1-p-500.jpg 500w, ../images/6-exhibition-portrait_1-p-800.jpg 800w, ../images/6-exhibition-portrait_1-p-1080.jpg 1080w, ../images/6-exhibition-portrait_1.jpg 1200w" alt="Aerodynamics is for those who can’t build engines by Indio Möglich" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/6-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/6-exhibition-portrait_2-p-500.jpg 500w, ../images/6-exhibition-portrait_2-p-800.jpg 800w, ../images/6-exhibition-portrait_2-p-1080.jpg 1080w, ../images/6-exhibition-portrait_2.jpg 1200w" alt="Aerodynamics is for those who can’t build engines by Indio Möglich" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/6-exhibition-portrait_3.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/6-exhibition-portrait_3-p-500.jpg 500w, ../images/6-exhibition-portrait_3-p-800.jpg 800w, ../images/6-exhibition-portrait_3-p-1080.jpg 1080w, ../images/6-exhibition-portrait_3.jpg 1200w" alt="Aerodynamics is for those who can’t build engines by Indio Möglich" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">Aerodynamics is for those who can’t build engines</div>
+                <div class="index-accordion-panel__inner-details">Glass and car paint <br> <br>H: 230 mm, B: 180 mm, 60 mm wide at the base<br>H: 200 mm, B: 185 mm, 60 mm wide at the base</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">These vases are widely inspired by Indio Möglich’s obsession with Ferrari. Like the Ferrari, the amphora shape of the vases is a classic. It is style. It is elegance. It is quality. It is something we yearn to own. Indio Möglich believes, that with products of true quality and aesthetic, we can fight overconsumption. He has combined the classic shape of the amphora vase with the speed and sleekness of the Ferrari. The vases are blown in glass with sculpted handles and sprayed with car paint.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Jens Ole Árnason</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-7" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images"><img src="../images/7-exhibition-portrait_1-new.jpg" loading="lazy" sizes="(max-width: 900px) 100vw, 900px" srcset="../images/7-exhibition-portrait_1-new.jpg 500w, ../images/7-exhibition-portrait_1-new.jpg 800w, ../images/7-exhibition-portrait_1-new.jpg 900w" alt="MELTING MATERIAL by Jens Ole Árnason" class="image-portrait-ratio hidden"><img src="../images/7-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/7-exhibition-portrait_2-p-500.jpg 500w, ../images/7-exhibition-portrait_2-p-800.jpg 800w, ../images/7-exhibition-portrait_2-p-1080.jpg 1080w, ../images/7-exhibition-portrait_2.jpg 1200w" alt="MELTING MATERIAL by Jens Ole Árnason" class="image-portrait-ratio hidden">
+              <div data-delay="4000" data-animation="slide" class="slider portrait w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/7-exhibition-portrait_1-new.jpg" loading="lazy" sizes="(max-width: 900px) 100vw, 900px" srcset="../images/7-exhibition-portrait_1-new.jpg 500w, ../images/7-exhibition-portrait_1-new.jpg 800w, ../images/7-exhibition-portrait_1-new.jpg 900w" alt="MELTING MATERIAL by Jens Ole Árnason" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/7-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/7-exhibition-portrait_2-p-500.jpg 500w, ../images/7-exhibition-portrait_2-p-800.jpg 800w, ../images/7-exhibition-portrait_2-p-1080.jpg 1080w, ../images/7-exhibition-portrait_2.jpg 1200w" alt="MELTING MATERIAL by Jens Ole Árnason" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">Melting Material</div>
+                <div class="index-accordion-panel__inner-details">Textile and thread<br>‍<br>H: 2500 mm, W: 1000 mm, D: 1000 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">‘Melting Material’ explores the transition zone between hard and soft, firm and fluid. Based on the venue of this year’s Biennale, the piece is inspired by glass – a material that balances between fragile and malleable, static and mobile. Through the textile techniques of hand-sewing and draping, Jens Ole Árnason translates the nature of glass into soft structures that appear to be melting, undulating or frozen in mid-motion. The purpose is to investigate the capacity of a textile material to capture the dual nature of glass as a firm surface and a substance in constant potential change.<br> <br>‘Melting Material’ invites us to engage in sensuous contemplation and reflection on the intrinsic properties of materials, our own experience of materiality, change and balance and the ability of crafts to inspire new contemporary works across materials and genres.<br> <br>Árnason works exclusively with excess textiles. ‘Melting Material’ was made using residual textiles from the electric-vehicle manufacturer Polestar.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Karen Lise Krabbe</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-8" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images">
+              <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/8-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/8-exhibition-landscape_1-p-500.jpg 500w, ../images/8-exhibition-landscape_1-p-800.jpg 800w, ../images/8-exhibition-landscape_1-p-1080.jpg 1080w, ../images/8-exhibition-landscape_1-p-1600.jpg 1600w, ../images/8-exhibition-landscape_1-p-2000.jpg 2000w, ../images/8-exhibition-landscape_1.jpg 2226w" alt="GELLED GLASS by Karen Lise Krabbe" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/8-exhibition-landscape_2.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/8-exhibition-landscape_2-p-500.jpg 500w, ../images/8-exhibition-landscape_2-p-800.jpg 800w, ../images/8-exhibition-landscape_2-p-1080.jpg 1080w, ../images/8-exhibition-landscape_2-p-1600.jpg 1600w, ../images/8-exhibition-landscape_2-p-2000.jpg 2000w, ../images/8-exhibition-landscape_2.jpg 2226w" alt="GELLED GLASS by Karen Lise Krabbe" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">GELLED GLASS – A NEW GLASS TECHNIQUE</div>
+                <div class="index-accordion-panel__inner-details">Glass</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">Karen Lise Krabbe presents her self-developed gelled-glass technique to give practising artists and makers as well as non-practitioners insight into the method and spark inspiration.<br><br>Krabbe’s work with interdisciplinary processes, including marine macro-algae, has resulted in her new glass moulding technique: glass, water and alginate are exposed to a solution of calcium chloride (CaCl2). This causes the glass mass to gel in a chemical crosslinking process. Through textile techniques, the gelled glass can be manipulated in the form of thread, sheets or 3D shapes. The most closely related method is pâte de verre, a technique that can be traced back to ancient Egypt and which is not widely used in Denmark. With gelled glass, Krabbe has reimagined the technique.<br><br>Through associative and intuitive connections, Krabbe’s years-long studies of marine life are closely related to the development, form and expression of her glass objects.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Krestine Harboe</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-9" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images"><img src="../images/9-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/9-exhibition-portrait_1-p-500.jpg 500w, ../images/9-exhibition-portrait_1-p-800.jpg 800w, ../images/9-exhibition-portrait_1-p-1080.jpg 1080w, ../images/9-exhibition-portrait_1.jpg 1200w" alt="PHALLUS IMPUDICUS by Krestine Harboe" class="image-portrait-ratio hidden"><img src="../images/9-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/9-exhibition-portrait_2-p-500.jpg 500w, ../images/9-exhibition-portrait_2-p-800.jpg 800w, ../images/9-exhibition-portrait_2-p-1080.jpg 1080w, ../images/9-exhibition-portrait_2.jpg 1200w" alt="PHALLUS IMPUDICUS by Krestine Harboe" class="image-portrait-ratio hidden">
+              <div data-delay="4000" data-animation="slide" class="slider portrait w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/9-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/9-exhibition-portrait_1-p-500.jpg 500w, ../images/9-exhibition-portrait_1-p-800.jpg 800w, ../images/9-exhibition-portrait_1-p-1080.jpg 1080w, ../images/9-exhibition-portrait_1.jpg 1200w" alt="PHALLUS IMPUDICUS by Krestine Harboe" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/9-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/9-exhibition-portrait_2-p-500.jpg 500w, ../images/9-exhibition-portrait_2-p-800.jpg 800w, ../images/9-exhibition-portrait_2-p-1080.jpg 1080w, ../images/9-exhibition-portrait_2.jpg 1200w" alt="PHALLUS IMPUDICUS by Krestine Harboe" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">Phallus impudicus</div>
+                <div class="index-accordion-panel__inner-details">Ceramic<br>‍<br>H: 1050 mm, W: 290 mm, D: 320 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">The piece consists of two ceramic sculptures combined into one. With inspiration from the magic of the Viking völva, or seeress, and the symbolism of the fungal kingdom, Krestine Harboe explores our universal human relationship with nature, ethics and heart energy. The title – which refers to a species of fungus that has both a Latin and a common name – is a humorous allusion to the cultural transition when women’s knowledge of nature was marginalized.<br><br>The sculpture is made of recycled clay in a process involving wheel throwing, hand-modelling and textile that is burnt off to leave a sensuous and complex surface. The glaze is made of raw materials from around the world and high-fired using mainly excess power. Since the kiln only takes objects up to 68 cm, the pieces are fired separately and then assembled.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Lasse Sylvest Lilleør</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-10" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images"><img src="../images/10-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/10-exhibition-portrait_1-p-500.jpg 500w, ../images/10-exhibition-portrait_1-p-800.jpg 800w, ../images/10-exhibition-portrait_1-p-1080.jpg 1080w, ../images/10-exhibition-portrait_1.jpg 1200w" alt="LAYER 8549 by Lasse Sylvest Lilleør" class="image-portrait-ratio hidden"><img src="../images/10-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/10-exhibition-portrait_2-p-500.jpg 500w, ../images/10-exhibition-portrait_2-p-800.jpg 800w, ../images/10-exhibition-portrait_2-p-1080.jpg 1080w, ../images/10-exhibition-portrait_2.jpg 1200w" alt="LAYER 8549 by Lasse Sylvest Lilleør" class="image-portrait-ratio hidden">
+              <div data-delay="4000" data-animation="slide" class="slider portrait w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/10-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/10-exhibition-portrait_1-p-500.jpg 500w, ../images/10-exhibition-portrait_1-p-800.jpg 800w, ../images/10-exhibition-portrait_1-p-1080.jpg 1080w, ../images/10-exhibition-portrait_1.jpg 1200w" alt="LAYER 8549 by Lasse Sylvest Lilleør" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/10-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/10-exhibition-portrait_2-p-500.jpg 500w, ../images/10-exhibition-portrait_2-p-800.jpg 800w, ../images/10-exhibition-portrait_2-p-1080.jpg 1080w, ../images/10-exhibition-portrait_2.jpg 1200w" alt="LAYER 8549 by Lasse Sylvest Lilleør" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">Layer 8549</div>
+                <div class="index-accordion-panel__inner-details">3D print PLA, resin and ink<br>‍<br>H: 850 mm, W: 550 mm, L: 500 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">‘Layer 8549’ fluctuates between hand work and digital work. Through complex organic geometry, Lasse Sylvest Lilleør refines the aesthetic expression of 3D print. He hand-draws the chair in the 3D program Rhino, transforming a classic chair type by shifting and connecting ball-and-socket joints. Each component is printed and then coated in resin by hand. The coating highlights the layers in the horizontal surfaces and camouflages them in the vertical ones. <br> <br>Finally, the parts are assembled with visible joints that expose the production method. The piece is created in a slow, sensuous process but produced using a technology developed for mass production.<br><br>With this chair, Lilleør aims to demonstrate that 3D print can be used to create refined objects – not just as a prototyping tool – and to acknowledge the digital technologies and tools that he uses in his process.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Laura Sonne Lund</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-11" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images alternative-layout"><img src="../images/11-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/11-exhibition-landscape_1-p-500.jpg 500w, ../images/11-exhibition-landscape_1-p-800.jpg 800w, ../images/11-exhibition-landscape_1-p-1080.jpg 1080w, ../images/11-exhibition-landscape_1-p-1600.jpg 1600w, ../images/11-exhibition-landscape_1-p-2000.jpg 2000w, ../images/11-exhibition-landscape_1.jpg 2226w" alt="GLASS FOREST by Laura Sonne Lund" class="image-landscape-new"><img src="../images/11-exhibition-portrait_2-new.jpg" loading="lazy" sizes="(max-width: 780px) 100vw, 780px" srcset="../images/11-exhibition-portrait_2-new.jpg 500w, ../images/11-exhibition-portrait_2-new.jpg 780w" alt="GLASS FOREST by Laura Sonne Lund" class="image-portrait-new"></div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">GLASS FOREST</div>
+                <div class="index-accordion-panel__inner-details">Blown glass with sand-blasted surface<br><br>Total (approx.): L: 1500 mm, W: 500 mm<br>Individual dimensions: H: 400, W: 120 mm / H: 310, W: 160 mm / H: 440, W: 180 mm / H: 250, W: 200 mm / H: 460, W: 140 mm / H: 420, W: 190 mm / H: 365, W: 135 mm / H: 440, W: 175 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">‘Glass Forest’ is a tribute to the forest floor and the connection between glass and forests. This connection is, above all, material: the forests formed the setting of the development of the glass blowing industry in Scandinavia and the rest of Europe. And in many places, you can find bits of forest glass (Waldglas in German) with the same greenish tone as the iron-rich quartz in the forest floor that was mixed into the glass mass along with the ashes from the wood that was burnt to fuel the kilns. <br><br>‘Glass Forest’ explores the meeting of contrasts: artificial and natural, transparent and solid. The colours imitate the greenish tone of forest glass, and the frosted surface hides the transparency of the glass. Laura Sonne Lund invites us to approach the objects with the same kind of curiosity as when exploring the forest floor, with its landscape of hollows and twisted roots.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Lea Nordstrøm</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-12" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images"><img src="../images/12-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/12-exhibition-portrait_1-p-500.jpg 500w, ../images/12-exhibition-portrait_1-p-800.jpg 800w, ../images/12-exhibition-portrait_1-p-1080.jpg 1080w, ../images/12-exhibition-portrait_1.jpg 1200w" alt="REPEATED PATTERN NO 1 by Lea Nordstrøm" class="image-portrait-ratio hidden"><img src="../images/12-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/12-exhibition-portrait_2-p-500.jpg 500w, ../images/12-exhibition-portrait_2-p-800.jpg 800w, ../images/12-exhibition-portrait_2-p-1080.jpg 1080w, ../images/12-exhibition-portrait_2.jpg 1200w" alt="REPEATED PATTERN NO 1 by Lea Nordstrøm" class="image-portrait-ratio hidden">
+              <div data-delay="4000" data-animation="slide" class="slider portrait w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/12-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/12-exhibition-portrait_1-p-500.jpg 500w, ../images/12-exhibition-portrait_1-p-800.jpg 800w, ../images/12-exhibition-portrait_1-p-1080.jpg 1080w, ../images/12-exhibition-portrait_1.jpg 1200w" alt="REPEATED PATTERN NO 1 by Lea Nordstrøm" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/12-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/12-exhibition-portrait_2-p-500.jpg 500w, ../images/12-exhibition-portrait_2-p-800.jpg 800w, ../images/12-exhibition-portrait_2-p-1080.jpg 1080w, ../images/12-exhibition-portrait_2.jpg 1200w" alt="REPEATED PATTERN NO 1 by Lea Nordstrøm" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">Repeated pattern no 1</div>
+                <div class="index-accordion-panel__inner-details">Dyed porcelain<br>‍<br>900 x 2500 x 50 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">In this piece, Lea Nordstrøm has aimed for a sensuous and aesthetic expression. Her visual inspiration springs from how we decode patterns and how the individual image becomes part of a greater whole and contributes to a rhythmic composition. The viewer’s gaze moves between whole, details, rhythm, and gradual colour transitions and shades.<br><br>The repetition of identical forms brings out the variations in hand-crafting and the textural quality of the porcelain. This creates a vivid dynamic in a presentation that might otherwise appear static.<br><br>The porcelain is stretched to the absolute limit, and the delicate lines and negative spaces allow the viewer to see through the layers, adding a sense of depth and a more refined expression. In combination with the scale of the piece and the sheer number of objects, this effect produces a more monumental appearance.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Lone Løvschal</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-13" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images">
+              <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/13-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/13-exhibition-landscape_1-p-500.jpg 500w, ../images/13-exhibition-landscape_1-p-800.jpg 800w, ../images/13-exhibition-landscape_1-p-1080.jpg 1080w, ../images/13-exhibition-landscape_1-p-1600.jpg 1600w, ../images/13-exhibition-landscape_1-p-2000.jpg 2000w, ../images/13-exhibition-landscape_1.jpg 2226w" alt="FLUCTUATING SPOONS by Lone Løvschal" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/13-exhibition-landscape_2.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/13-exhibition-landscape_2-p-500.jpg 500w, ../images/13-exhibition-landscape_2-p-800.jpg 800w, ../images/13-exhibition-landscape_2-p-1080.jpg 1080w, ../images/13-exhibition-landscape_2-p-1600.jpg 1600w, ../images/13-exhibition-landscape_2-p-2000.jpg 2000w, ../images/13-exhibition-landscape_2.jpg 2226w" alt="FLUCTUATING SPOONS by Lone Løvschal" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">FLUCTUATING SPOONS</div>
+                <div class="index-accordion-panel__inner-details">Sterling silver<br>‍<br>All spoons are based on silver bar dimensions 10 x 10 x 70 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">As a way of embracing a new stage of life, perimenopause, Lone Løvschal has abandoned control, giving over to the craft and the possibility of divine or hormonal intervention. She has surrendered to her emotions, to the immediate aesthetic of the hammer and to her many years of experience as a silversmith with an affinity for spoons and beautiful lines.<br> <br>Working from the same material base, Løvschal has forged over 30 spoons during a lunar cycle of 30 days without prior sketching. Fluctuating hormones produced numerous changes in her body and psyche, which had a profound impact on her work as a maker. Planning and a carefully laid-out design process proved challenging, as her oestrogen levels dropped, and the project gave her the gift of having a fixed assignment every day. The time constraint made the process playful and immediate.<br> <br>The project helped Løvschal rediscover the joy in her work, and she carries the playful approach with her into her future practice.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Lotte Westphael</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-14" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images alternative-layout"><img src="../images/14-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/14-exhibition-landscape_1-p-500.jpg 500w, ../images/14-exhibition-landscape_1-p-800.jpg 800w, ../images/14-exhibition-landscape_1-p-1080.jpg 1080w, ../images/14-exhibition-landscape_1-p-1600.jpg 1600w, ../images/14-exhibition-landscape_1-p-2000.jpg 2000w, ../images/14-exhibition-landscape_1.jpg 2226w" alt="A POETIC OF PATTERNS by Lotte Westphael" class="image-landscape-new"><img src="../images/14-exhibition-portrait_2-new.jpg" loading="lazy" sizes="(max-width: 780px) 100vw, 780px" srcset="../images/14-exhibition-portrait_2-new.jpg 500w, ../images/14-exhibition-portrait_2-new.jpg 780w" alt="A POETIC OF PATTERNS by Lotte Westphael" class="image-portrait-new"></div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">A POETIC OF PATTERNS</div>
+                <div class="index-accordion-panel__inner-details">Five cylindrical vessels in dyed porcelain<br>Slab-built by hand<br>‍<br>D: 270–370 mm, H: 180–320 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">Lotte Westphael’s work series in porcelain contains a story of time in a pattern of interference between a ceramic and a textile universe.<br><br>With inspiration from the systematic approach of weaving and the artist Agnes Martin’s vibrant pencil lines, Westphael examines how rhythm and patterns can be integrated with the materiality of porcelain. The patterns are not just decorative but represent an inner logic in the construction of the pieces.<br><br>Westphael aims for a vibrant sensitivity in both lines and colours and is preoccupied with colour sequences that seem to flow in a poetic story following the curvature of the cylinder.<br><br>The colours are incorporated into the porcelain mass, weighing, kneading and assembling up to 50 colour shades  in a layered method, 100 % low-tech.<br><br>The carefully planned process allows for the movement of the material during firing. Thus, the technique is both a method and part of the aesthetic of the pieces.<br><br>The five pieces resonate with this poetic.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Louise Bitsch</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-15" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images"><img src="../images/15-exhibition-portrait_1-v2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/15-exhibition-portrait_1-v2-p-500.jpg 500w, ../images/15-exhibition-portrait_1-v2-p-800.jpg 800w, ../images/15-exhibition-portrait_1-v2-p-1080.jpg 1080w, ../images/15-exhibition-portrait_1-v2.jpg 1200w" alt="ORNO by Louise Bitsch" class="image-portrait-ratio hidden"><img src="../images/15-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/15-exhibition-portrait_2-p-500.jpg 500w, ../images/15-exhibition-portrait_2-p-800.jpg 800w, ../images/15-exhibition-portrait_2-p-1080.jpg 1080w, ../images/15-exhibition-portrait_2.jpg 1200w" alt="ORNO by Louise Bitsch" class="image-portrait-ratio hidden">
+              <div data-delay="4000" data-animation="slide" class="slider portrait w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/15-exhibition-portrait_1-v2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/15-exhibition-portrait_1-v2-p-500.jpg 500w, ../images/15-exhibition-portrait_1-v2-p-800.jpg 800w, ../images/15-exhibition-portrait_1-v2-p-1080.jpg 1080w, ../images/15-exhibition-portrait_1-v2.jpg 1200w" alt="ORNO by Louise Bitsch" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/15-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/15-exhibition-portrait_2-p-500.jpg 500w, ../images/15-exhibition-portrait_2-p-800.jpg 800w, ../images/15-exhibition-portrait_2-p-1080.jpg 1080w, ../images/15-exhibition-portrait_2.jpg 1200w" alt="ORNO by Louise Bitsch" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">ORNO</div>
+                <div class="index-accordion-panel__inner-details">Anodized aluminium<br>‍<br>H: 740 mm, W: 580 mm, D: 580 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">‘ORNO’ is a visual and tactile study of the interaction of past, present and future, where traditional craftsmanship meets modern industrial technology. With inspiration from the delicate technique behind a lace tablecloth, Louise Bitsch has created a familiar silhouette and form to convey a historic narrative in the modern material of aluminium. The table forms a powerful visual and emotional link to the past, as Louise Bitsch uses contemporary technologies to produce something new.<br> <br>The piece challenges the aesthetic of mass production by demonstrating how technology can revitalize old craft traditions. And, not least, how the two worlds can co-exist in harmony when modern technology is used to carry on, rather than replace, the craft legacy.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Lærke Laura Nielsen</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-16" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images alternative-layout"><img src="../images/16-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/16-exhibition-landscape_1-p-500.jpg 500w, ../images/16-exhibition-landscape_1-p-800.jpg 800w, ../images/16-exhibition-landscape_1-p-1080.jpg 1080w, ../images/16-exhibition-landscape_1-p-1600.jpg 1600w, ../images/16-exhibition-landscape_1-p-2000.jpg 2000w, ../images/16-exhibition-landscape_1.jpg 2226w" alt="TACTILE TABLE by Lærke Laura Nielsen" class="image-landscape-new"><img src="../images/16-exhibition-portrait_2-new.jpg" loading="lazy" sizes="(max-width: 780px) 100vw, 780px" srcset="../images/16-exhibition-portrait_2-new.jpg 500w, ../images/16-exhibition-portrait_2-new.jpg 780w" alt="TACTILE TABLE by Lærke Laura Nielsen" class="image-portrait-new"></div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">Tactile Table</div>
+                <div class="index-accordion-panel__inner-details">Hand-blown glass<br><br>“Tassa cum vase”. H: 450 mm, Ø: 285 mm<br>“Tassa”. H: 280 mm, W: 380 mm, D: 350 mm<br>“Candelabrum”. H: 580 mm, W: 350 mm, D: 180 mm<br>“Cloche I”. “H: 270 mm, Ø: 230 mm<br>“Cloche II”. H: 390 mm, Ø: 200 mm<br>“Tabula Tortae”. H: 135 mm, Ø: 330 mm<br>“Lagena”. H: 265 mm, W: 180 mm, D: 140 mm<br>“Calix”. H: 140 mm, W: 145 mm, D: 115 mm<br>“Patera”. H: 130 mm, Ø: 300 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">‘Tactile Table’ explores new perspectives on glass making by transforming traditional glass objects into a sensuous experience. Lærke Laura Nielsen highlights the unexpected aesthetic qualities of glass blowing and challenges the traditional understanding of glass making and the life cycle of the material.<br> <br>The classic elements of a table setting take on new, appetizing life through deliberate flaws and shards from the glass blowing process. Instead of a precise figurative expression, Nielsen uses random residual elements to create abstract, decorative shapes that invite the viewer to reach their own personal interpretation.<br> <br>The craft takes on an experimental dimension that offers a new take on glass as a material: the essence of the material is appreciated, its life cycle is extended, and the aesthetic qualities of glass are brought forward as something sensuous, carnal, clumsy and opulent.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Malene Hartmann Rasmussen</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-17" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images">
+              <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/17-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/17-exhibition-landscape_1-p-500.jpg 500w, ../images/17-exhibition-landscape_1-p-800.jpg 800w, ../images/17-exhibition-landscape_1-p-1080.jpg 1080w, ../images/17-exhibition-landscape_1-p-1600.jpg 1600w, ../images/17-exhibition-landscape_1-p-2000.jpg 2000w, ../images/17-exhibition-landscape_1.jpg 2226w" alt="VIPER WEAVE #11 by Malene Hartmann Rasmussen" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/17-exhibition-landscape_2.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/17-exhibition-landscape_2-p-500.jpg 500w, ../images/17-exhibition-landscape_2-p-800.jpg 800w, ../images/17-exhibition-landscape_2-p-1080.jpg 1080w, ../images/17-exhibition-landscape_2-p-1600.jpg 1600w, ../images/17-exhibition-landscape_2-p-2000.jpg 2000w, ../images/17-exhibition-landscape_2.jpg 2226w" alt="VIPER WEAVE #11 by Malene Hartmann Rasmussen" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">Viper Weave #11</div>
+                <div class="index-accordion-panel__inner-details">One-off in stoneware  <br>‍<br>95 x 470 x 505 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">‘Viper Weave’ is open to the viewer’s own associations and interpretations. The piece is an invitation for us to see and reflect. <br><br>The suite takes its point of departure in the French Renaissance ceramist Bernard Palissy’s oeuvre. Along the river bank, Palissy gathered frogs, insects and snakes to use as models for his ‘Rustiques Figulines’, which Malene Hartmann Rasmussen studied during a residence at the Victoria and Albert Museum in 2018.<br><br>A core element in her work is animism: the notion that animals, plants and landscapes are sentient, and that rivers, mountains and rocks are animated.<br> <br>Hartmann Rasmussen is interested in transitions between states – intellectual and in terms of form – and often interprets them in sculptural animal and plant hybrids. At first glance, the pieces may seem reliable, but they soon reveal themselves to be absurd objects, permeated by a dark narrative.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Maria Bang Espersen</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-18" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images"><img src="../images/18-exhibition-portrait_1-new.jpg" loading="lazy" sizes="(max-width: 900px) 100vw, 900px" srcset="../images/18-exhibition-portrait_1-new.jpg 500w, ../images/18-exhibition-portrait_1-new.jpg 800w, ../images/18-exhibition-portrait_1-new.jpg 900w" alt="IN SEARCH OF SOMETHING ELSE / hope is a powerful thing by Maria Bang Espersen" class="image-portrait-ratio hidden"><img src="../images/18-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/18-exhibition-portrait_2-p-500.jpg 500w, ../images/18-exhibition-portrait_2-p-800.jpg 800w, ../images/18-exhibition-portrait_2-p-1080.jpg 1080w, ../images/18-exhibition-portrait_2.jpg 1200w" alt="IN SEARCH OF SOMETHING ELSE / hope is a powerful thing by Maria Bang Espersen" class="image-portrait-ratio hidden">
+              <div data-delay="4000" data-animation="slide" class="slider portrait w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/18-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/18-exhibition-portrait_1-p-500.jpg 500w, ../images/18-exhibition-portrait_1-p-800.jpg 800w, ../images/18-exhibition-portrait_1-p-1080.jpg 1080w, ../images/18-exhibition-portrait_1.jpg 1200w" alt="IN SEARCH OF SOMETHING ELSE / hope is a powerful thing by Maria Bang Espersen" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/18-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/18-exhibition-portrait_2-p-500.jpg 500w, ../images/18-exhibition-portrait_2-p-800.jpg 800w, ../images/18-exhibition-portrait_2-p-1080.jpg 1080w, ../images/18-exhibition-portrait_2.jpg 1200w" alt="IN SEARCH OF SOMETHING ELSE / hope is a powerful thing by Maria Bang Espersen" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">IN SEARCH OF SOMETHING ELSE / hope is a powerful thing</div>
+                <div class="index-accordion-panel__inner-details">Glass, 460 x 400 x 750 mm, 15.8 kg /<br>Glass, 330 x 360 x 770 mm, 9 kg</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">The sculptures are inspired by the architectural decorations in the oldest part of the glass museum, which was originally built as a customs house. In buildings from the previous century, the column – a symbol of power, strength and stability – is usually a mere imitation of an ideal, its function as a load-bearing element long gone. The pieces play with the notion of ornamentation unleashed: Ionic volutes that have abandoned their place at the very top and are now headed somewhere else. They have gone off script, on the search for something else – new possibilities, a different future or a desire to establish new connections?<br><br>In 2011, Maria Bang Espersen developed a technique of stretching and folding hot glass until a thread-like structure develops on the surface. This technique requires her to work quickly and in a very focused way during the few seconds that the glass remains malleable. However, she never has full control, as the result will be influenced by gravity and the inherent way of the glass itself.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Maria Sparre-Petersen</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-19" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images">
+              <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/19-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/19-exhibition-landscape_1-p-500.jpg 500w, ../images/19-exhibition-landscape_1-p-800.jpg 800w, ../images/19-exhibition-landscape_1-p-1080.jpg 1080w, ../images/19-exhibition-landscape_1-p-1600.jpg 1600w, ../images/19-exhibition-landscape_1-p-2000.jpg 2000w, ../images/19-exhibition-landscape_1.jpg 2226w" alt="Epistemic Artefact CK8_2024_07 by Maria Sparre-Petersen" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/19-exhibition-landscape_2.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/19-exhibition-landscape_2-p-500.jpg 500w, ../images/19-exhibition-landscape_2-p-800.jpg 800w, ../images/19-exhibition-landscape_2-p-1080.jpg 1080w, ../images/19-exhibition-landscape_2-p-1600.jpg 1600w, ../images/19-exhibition-landscape_2-p-2000.jpg 2000w, ../images/19-exhibition-landscape_2.jpg 2226w" alt="Epistemic Artefact CK8_2024_07 by Maria Sparre-Petersen" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">Epistemic Artefact CK8_2024_07</div>
+                <div class="index-accordion-panel__inner-details">Regenerated window glass with coating<br>‍<br>140 x 150 x 330 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">Once all the sand in the world has been used to make glass and concrete for buildings and roads, and we no longer have access to virgin materials, glass artists will have to get used to working with whatever glass is on hand. Maria Sparre-Petersen has explored how sustainable principles can be incorporated into artistic glasswork processes. Specifically, she has experimented with the use of scrapped window panes instead of glass types developed specially for artistic productions. Window glass has different material properties than art glass. For example, modern window panes have invisible coatings designed to optimize energy consumption in buildings. These surface treatments react with the glass in the thermochemical fusing process, which results in unpredictable expressions in the artefacts. This gives rise to possibilities that spark Sparre-Petersen’s curiosity.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Marie Holst</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-20" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images">
+              <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/20-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/20-exhibition-landscape_1-p-500.jpg 500w, ../images/20-exhibition-landscape_1-p-800.jpg 800w, ../images/20-exhibition-landscape_1-p-1080.jpg 1080w, ../images/20-exhibition-landscape_1-p-1600.jpg 1600w, ../images/20-exhibition-landscape_1-p-2000.jpg 2000w, ../images/20-exhibition-landscape_1.jpg 2226w" alt="CRY ME A RIVER by Marie Holst" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/20-exhibition-landscape_2.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/20-exhibition-landscape_2-p-500.jpg 500w, ../images/20-exhibition-landscape_2-p-800.jpg 800w, ../images/20-exhibition-landscape_2-p-1080.jpg 1080w, ../images/20-exhibition-landscape_2-p-1600.jpg 1600w, ../images/20-exhibition-landscape_2-p-2000.jpg 2000w, ../images/20-exhibition-landscape_2.jpg 2226w" alt="CRY ME A RIVER by Marie Holst" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/20-exhibition-landscape_3.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/20-exhibition-landscape_3-p-500.jpg 500w, ../images/20-exhibition-landscape_3-p-800.jpg 800w, ../images/20-exhibition-landscape_3-p-1080.jpg 1080w, ../images/20-exhibition-landscape_3-p-1600.jpg 1600w, ../images/20-exhibition-landscape_3-p-2000.jpg 2000w, ../images/20-exhibition-landscape_3.jpg 2226w" alt="CRY ME A RIVER by Marie Holst" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">CRY ME A RIVER</div>
+                <div class="index-accordion-panel__inner-details">Wool, cotton and nylon<br>‍<br>H: 750, W: 6500, D:70 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">‘CRY ME A RIVER’ consists of six chronological scenes related to the sea. The piece opens with a prologue, followed by five scenes that work as individual stories and also form overall narrative with references to the sea as a cultural, historical and political theme.<br> <br>‘CRY ME A RIVER’ translates classic tapestry weaving to the conditions of the digital loom. In the piece, Marie Holst explores tapestry weaving as a medium for conveying contemporary themes and issues.<br> <br>The piece was hand-woven on a digital TC2 loom and combines shiny and matt yarns to create a surface with varying relief effects, depending on lighting conditions.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Morten Klitgaard</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-21" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images alternative-layout"><img src="../images/21-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/21-exhibition-landscape_1-p-500.jpg 500w, ../images/21-exhibition-landscape_1-p-800.jpg 800w, ../images/21-exhibition-landscape_1-p-1080.jpg 1080w, ../images/21-exhibition-landscape_1-p-1600.jpg 1600w, ../images/21-exhibition-landscape_1-p-2000.jpg 2000w, ../images/21-exhibition-landscape_1.jpg 2226w" alt="TERRAIN #0125, TERRAIN #0225, TERRAIN #0325 by Morten Klitgaard" class="image-landscape-new"><img src="../images/21-exhibition-portrait_2-new.jpg" loading="lazy" sizes="(max-width: 780px) 100vw, 780px" srcset="../images/21-exhibition-portrait_2-new.jpg 500w, ../images/21-exhibition-portrait_2-new.jpg 780w" alt="TERRAIN #0125, TERRAIN #0225, TERRAIN #0325 by Morten Klitgaard" class="image-portrait-new"></div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">TERRAIN #0125, TERRAIN #0225, TERRAIN #0325</div>
+                <div class="index-accordion-panel__inner-details">Glass, colour pigment, black quartz, copper oxide, granite, silt and ash<br><br>H: 310 mm, W: 220 mm <br>H: 270 mm, W: 190 mm<br>H: 340 mm, W: 200 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">The glass grows out of a deep and constant fascination with nature’s infinite complexity and beauty – a symphony of forms, structures and rhythms that Morten Klitgaard seeks to recreate and interpret. In a time when many feel increasingly separated from nature and its primordial power, he feels a pressing need to enhance our connectedness with it. His goal is to visualize the contrasting patterns that arise when nature’s fluid organic shapes meet human-made lines and structures.<br><br>Klitgaard’s medium is glass, a material that in its hot, inflated state becomes malleable and delicate, alive and pliable. He uses small, carefully selected natural objects as stamps from wild nature to apply textures and patterns to the glass. In this way, he achieves poetic harmony between natural and cultivated, between soft and firm, between what is shaped and what retains its form.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Oberdoerfer &amp; Krebs</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-22" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images"><img src="../images/22-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/22-exhibition-portrait_1-p-500.jpg 500w, ../images/22-exhibition-portrait_1-p-800.jpg 800w, ../images/22-exhibition-portrait_1-p-1080.jpg 1080w, ../images/22-exhibition-portrait_1.jpg 1200w" alt="HUMAN LAYERS by Oberdoerfer &amp; Krebs" class="image-portrait-ratio hidden"><img src="../images/22-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/22-exhibition-portrait_2-p-500.jpg 500w, ../images/22-exhibition-portrait_2-p-800.jpg 800w, ../images/22-exhibition-portrait_2-p-1080.jpg 1080w, ../images/22-exhibition-portrait_2.jpg 1200w" alt="HUMAN LAYERS by Oberdoerfer &amp; Krebs" class="image-portrait-ratio hidden">
+              <div data-delay="4000" data-animation="slide" class="slider portrait w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/22-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/22-exhibition-portrait_1-p-500.jpg 500w, ../images/22-exhibition-portrait_1-p-800.jpg 800w, ../images/22-exhibition-portrait_1-p-1080.jpg 1080w, ../images/22-exhibition-portrait_1.jpg 1200w" alt="HUMAN LAYERS by Oberdoerfer &amp; Krebs" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/22-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/22-exhibition-portrait_2-p-500.jpg 500w, ../images/22-exhibition-portrait_2-p-800.jpg 800w, ../images/22-exhibition-portrait_2-p-1080.jpg 1080w, ../images/22-exhibition-portrait_2.jpg 1200w" alt="HUMAN LAYERS by Oberdoerfer &amp; Krebs" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">Human Layers</div>
+                <div class="index-accordion-panel__inner-details">Polylactic acid (PLA)<br>‍<br>H: 900 mm, W: 450 mm, D: 450 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">‘Human Layers’ is a 3D printed vase created in the field of tension between tradition and technology. The piece was inspired by the classic textile dyeing method ikat. The project examines how traditional crafts can be reinterpreted through modern production methods and algorithmic systems. The interaction between humans and machines gives rise to a new aesthetic expression in which ornamentation and method fuse into one. The vase is Oberdoerfer &amp; Krebs’s take on how crafts can achieve relevance in a digital age when industrial and hand-made are not opposites but collaborators.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Peter Durlev</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-23" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images"><img src="../images/23-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/23-exhibition-portrait_1-p-500.jpg 500w, ../images/23-exhibition-portrait_1-p-800.jpg 800w, ../images/23-exhibition-portrait_1-p-1080.jpg 1080w, ../images/23-exhibition-portrait_1.jpg 1200w" alt="EARTHEN VEIL by Peter Durlev" class="image-portrait-ratio hidden"><img src="../images/23-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/23-exhibition-portrait_2-p-500.jpg 500w, ../images/23-exhibition-portrait_2-p-800.jpg 800w, ../images/23-exhibition-portrait_2-p-1080.jpg 1080w, ../images/23-exhibition-portrait_2.jpg 1200w" alt="EARTHEN VEIL by Peter Durlev" class="image-portrait-ratio hidden">
+              <div data-delay="4000" data-animation="slide" class="slider portrait w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/23-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/23-exhibition-portrait_1-p-500.jpg 500w, ../images/23-exhibition-portrait_1-p-800.jpg 800w, ../images/23-exhibition-portrait_1-p-1080.jpg 1080w, ../images/23-exhibition-portrait_1.jpg 1200w" alt="EARTHEN VEIL by Peter Durlev" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/23-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/23-exhibition-portrait_2-p-500.jpg 500w, ../images/23-exhibition-portrait_2-p-800.jpg 800w, ../images/23-exhibition-portrait_2-p-1080.jpg 1080w, ../images/23-exhibition-portrait_2.jpg 1200w" alt="EARTHEN VEIL by Peter Durlev" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">EARTHEN VEIL</div>
+                <div class="index-accordion-panel__inner-details">Stoneware clay, slipping and glaze <br>‍<br>H: 560 mm, W: 330 mm, D: 150 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">‘Earthen Veil’ represents some of the geological processes that have shaped our shared planet. The surface texture symbolizes the cycle of life and the layers of sediment that build up over time: a story of transformation and change, in which Peter Durlev invites the viewer to reflect on the influences of these processes on both nature and our own existence. <br> <br>With their inherent memory, materials bear witness to the passage of time and the slow rhythm of nature. Every crack and irregularity serves as a map of invisible forces and movements deep under ground. The piece acts as a quiet meditation on the organic and immutable and provides a space for reflection and contemplation.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Sarah Busk &amp; Mari Børlund</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-24" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images"><img src="../images/24-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/24-exhibition-portrait_1-p-500.jpg 500w, ../images/24-exhibition-portrait_1-p-800.jpg 800w, ../images/24-exhibition-portrait_1-p-1080.jpg 1080w, ../images/24-exhibition-portrait_1.jpg 1200w" alt="A GLIMPSE OF NATURE by Sarah Busk &amp; Mari Børlund" class="image-portrait-ratio hidden"><img src="../images/24-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/24-exhibition-portrait_2-p-500.jpg 500w, ../images/24-exhibition-portrait_2-p-800.jpg 800w, ../images/24-exhibition-portrait_2-p-1080.jpg 1080w, ../images/24-exhibition-portrait_2.jpg 1200w" alt="A GLIMPSE OF NATURE by Sarah Busk &amp; Mari Børlund" class="image-portrait-ratio hidden">
+              <div data-delay="4000" data-animation="slide" class="slider portrait w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/24-exhibition-portrait_1.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/24-exhibition-portrait_1-p-500.jpg 500w, ../images/24-exhibition-portrait_1-p-800.jpg 800w, ../images/24-exhibition-portrait_1-p-1080.jpg 1080w, ../images/24-exhibition-portrait_1.jpg 1200w" alt="A GLIMPSE OF NATURE by Sarah Busk &amp; Mari Børlund" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/24-exhibition-portrait_2.jpg" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="../images/24-exhibition-portrait_2-p-500.jpg 500w, ../images/24-exhibition-portrait_2-p-800.jpg 800w, ../images/24-exhibition-portrait_2-p-1080.jpg 1080w, ../images/24-exhibition-portrait_2.jpg 1200w" alt="A GLIMPSE OF NATURE by Sarah Busk &amp; Mari Børlund" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">A Glimpse of Nature</div>
+                <div class="index-accordion-panel__inner-details">Paper, plant dye, earth pigment, tannins, iron sulphate and fishing line <br> <br>‘Floating’. H: 2800, mm W: 2000 mm, D: 500 mm<br>‘Growing’. H: 2000 mm, W: 1500 mm, D: 400 mm<br>‘Melting’. H: 1000 mm, W: 1200 mm, D: 900 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">‘A Glimpse of Nature’ is a spatial suite of three woven forms: ‘Floating’, ‘Growing’ and ‘Melting’. It was conceived as a poetic observation of the co-existence of nature and humanity. <br> <br>The thoughts behind the piece sprang from a focus on climate change and a common curiosity about exploring new sustainable and aesthetic approaches to weaving and dyeing. <br> <br>In an experimental process, Sarah Busk &amp; Mari Børlund investigate what is feasible.<br> <br>The crisp, transparent paper that the forms are woven in has been frugally brushed with natural dyes. Each form has its own palette with a gradation of colours ranging from deep and intense to delicate shades. This variation results in a shimmering shadow play as daylight passes through the weave. <br> <br>After the pieces have been cut off the loom, the weaving technique and the properties of the paper result in a three-dimensional form. The woven pieces shrink, twist and take on three-dimensional form in this explorative process.<br><br>The piece received support from the Danish Arts Foundation, Danmarks Nationalbank’s Anniversary Foundation and Hahnemühle.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Thomas Woltmann</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-25" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images">
+              <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
+                <div class="w-slider-mask">
+                  <div class="slider-image w-slide"><img src="../images/25-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/25-exhibition-landscape_1-p-500.jpg 500w, ../images/25-exhibition-landscape_1-p-800.jpg 800w, ../images/25-exhibition-landscape_1-p-1080.jpg 1080w, ../images/25-exhibition-landscape_1-p-1600.jpg 1600w, ../images/25-exhibition-landscape_1-p-2000.jpg 2000w, ../images/25-exhibition-landscape_1.jpg 2226w" alt="PLATFORM by Thomas Woltmann" class="slider-image-inner"></div>
+                  <div class="slider-image w-slide"><img src="../images/25-exhibition-landscape_2.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/25-exhibition-landscape_2-p-500.jpg 500w, ../images/25-exhibition-landscape_2-p-800.jpg 800w, ../images/25-exhibition-landscape_2-p-1080.jpg 1080w, ../images/25-exhibition-landscape_2-p-1600.jpg 1600w, ../images/25-exhibition-landscape_2-p-2000.jpg 2000w, ../images/25-exhibition-landscape_2.jpg 2226w" alt="PLATFORM by Thomas Woltmann" class="slider-image-inner"></div>
+                </div>
+                <div class="left-arrow-2 w-slider-arrow-left"></div>
+                <div class="w-slider-arrow-right"></div>
+                <div class="w-slider-nav"></div>
+              </div>
+            </div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">PLATFORM</div>
+                <div class="index-accordion-panel__inner-details">Douglas wood, pigmented linseed oil with raw and burnt Løvskal ochre and retro lacquer<br>‍<br>H: 760 mm, D: 400 mm, W: 2840 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">Once upon a time, we used to paint our trains in Danish ochre – and the dark signature red used by DSB, the Danish State Railways, was extracted from Jutland soil. The soil and the ochre are still there, but the ochre industry and the craft have disappeared. With the furniture piece ‘Platform’, Thomas Woltmann wishes to shine a light on the lost colours and their capacity to connect us to nature. ‘Platform’ is a bench designed for use on Danish railway platforms. Like the old train cars, it has a surface treatment of pigmented linseed oil with raw and burnt ochre from the now defunct ochre works in Løvskal.<br><br>Since 2022, Woltmann has been exploring how we can revive the production, the craft and the use of Danish ochre pigments. The linseed oil for ‘Platform’ was developed in collaboration with the manufacturer Linolie &amp; Pigment based on ochre from Løvskal. It is the first industrially produced oil with Danish earth pigments for over 60 years.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-state="closed" class="index-accordion-item">
+        <div aria-expanded="false" role="button" tabindex="0" class="index-accordion-trigger">
+          <div class="index-accordion-title">Timmi B. Kromann</div><img src="../images/plus.svg" loading="lazy" alt="" class="index-accordion-icon">
+        </div>
+        <div id="acc-panel-26" role="region" class="index-accordion-panel">
+          <div class="index-accordion-panel__inner">
+            <div class="index-accordion-panel__inner-images alternative-layout"><img src="../images/26-exhibition-landscape_1.jpg" loading="lazy" sizes="(max-width: 2226px) 100vw, 2226px" srcset="../images/26-exhibition-landscape_1-p-500.jpg 500w, ../images/26-exhibition-landscape_1-p-800.jpg 800w, ../images/26-exhibition-landscape_1-p-1080.jpg 1080w, ../images/26-exhibition-landscape_1-p-1600.jpg 1600w, ../images/26-exhibition-landscape_1-p-2000.jpg 2000w, ../images/26-exhibition-landscape_1.jpg 2226w" alt="IT&#x27;S NOT A VESSEL by Timmi B. Kromann" class="image-landscape-new"><img src="../images/26-exhibition-portrait_2-new.jpg" loading="lazy" sizes="(max-width: 780px) 100vw, 780px" srcset="../images/26-exhibition-portrait_2-new.jpg 500w, ../images/26-exhibition-portrait_2-new.jpg 780w" alt="IT&#x27;S NOT A VESSEL by Timmi B. Kromann" class="image-portrait-new"></div>
+            <div class="index-accordion-panel__inner-texts">
+              <div class="index-accordion-panel__inner-info-wrapper">
+                <div class="index-accordion-panel__inner-title">It´s not a vessel</div>
+                <div class="index-accordion-panel__inner-details">Hand-knitting: 99% paper and 1% PA<br>‍<br>90 x 80 mm, 110 x 90 mm, 130 x 90 mm, <br>180 x 130 mm, 260 x 180 mm</div>
+              </div>
+              <div class="index-accordion-panel__inner-description">Timmi B. Kromann’s practice challenges established understandings of the relations between technique, form and material in crafts. Her experimental approach combines textile techniques, such as hand-knitting, with the expression of ceramics and the lightness of paper. The pieces strike a balance between soft, hard and fragile and give rise to new aesthetic and material connections. The project examines affiliations – between materials and between disciplines. Kromann seeks to open a space for interdisciplinary communities and new understandings of the possibilities of crafts.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="colophon" data-section="colophon" class="colophon">
+    <div class="sponsors-wrapper">
+      <div class="text-xs">this years biennale is generously supported by</div>
+      <div class="logo-grid"><img src="../images/FondeGroup_cleaned_light-pt1-scaled.png" loading="lazy" sizes="(max-width: 2500px) 100vw, 2500px" srcset="../images/FondeGroup_cleaned_light-pt1-scaled-p-500.png 500w, ../images/FondeGroup_cleaned_light-pt1-scaled-p-800.png 800w, ../images/FondeGroup_cleaned_light-pt1-scaled-p-1080.png 1080w, ../images/FondeGroup_cleaned_light-pt1-scaled-p-1600.png 1600w, ../images/FondeGroup_cleaned_light-pt1-scaled-p-2000.png 2000w, ../images/FondeGroup_cleaned_light-pt1-scaled.png 2500w" alt="Statens Kunstfond logo" class="support-logo"><img src="../images/FondeGroup_cleaned_light-pt2-scaled.png" loading="lazy" sizes="(max-width: 2500px) 100vw, 2500px" srcset="../images/FondeGroup_cleaned_light-pt2-scaled-p-500.png 500w, ../images/FondeGroup_cleaned_light-pt2-scaled-p-800.png 800w, ../images/FondeGroup_cleaned_light-pt2-scaled-p-1080.png 1080w, ../images/FondeGroup_cleaned_light-pt2-scaled-p-1600.png 1600w, ../images/FondeGroup_cleaned_light-pt2-scaled-p-2000.png 2000w, ../images/FondeGroup_cleaned_light-pt2-scaled.png 2500w" alt="Statens Kunstfond logo" class="support-logo"></div>
+    </div>
+    <div class="_2-cols margin-bottom">
+      <div class="nominee-textbox">
+        <div class="text-xs">Organizer</div>
+        <div class="nominee-text-style">Danish Crafts &amp; Design Association</div>
+      </div>
+      <div class="nominee-textbox">
+        <div class="text-xs">exhibition venue</div>
+        <div class="nominee-text-style">Glas — Museum of Glass Art</div>
+      </div>
+      <div class="nominee-textbox">
+        <div class="text-xs"><strong>Jury, curation and exhibition design</strong></div>
+        <div class="nominee-text-style">Kamma Rosa Schytte, Kasper Kyster, Josefine Krabbe and Lærke Ryom – founders of Ukurant.</div>
+      </div>
+      <div class="nominee-textbox extra-margin-bottom">
+        <div class="text-xs">Prize committee</div>
+        <div class="nominee-text-style">Karen Grøn, Director of Trapholt Art Museum; Rigetta Klint, editor of the bookazine HÅNDVÆRK; and designer Lise Vester</div>
+      </div>
+      <div class="nominee-textbox">
+        <div class="text-xs">Photography</div>
+        <div class="nominee-text-style">Jacob Friis-Holm Nielsen and Kasper G. Palsnov</div>
+      </div>
+      <div class="nominee-textbox">
+        <div class="text-xs">Translation</div>
+        <div class="nominee-text-style">Dorte Herholdt Silver</div>
+      </div>
+      <div class="nominee-textbox">
+        <div class="text-xs">Graphic design</div>
+        <div class="nominee-text-style">Osvald Landmark</div>
+      </div>
+      <div class="nominee-textbox">
+        <div class="text-xs">website</div>
+        <div class="nominee-text-style">Jonas Baun</div>
+      </div>
+    </div>
+    <div class="_2-cols">
+      <div class="credits-wrapper">
+        <div class="nominee-textbox">
+          <div class="text-xs">© copyright biennalen for arts and craft 2025. <br>all rights reserved.</div>
+        </div>
+      </div>
+      <div class="credits-wrapper">
+        <div class="nominee-textbox">
+          <div class="text-xs">biennalen for arts and crafts 2025. <br>october 9th 2025 — February 22nd 2026</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bottom-fade"></div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=651472ffd746bbfe11cf36c2" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../js/webflow.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/gsap.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/ScrollTrigger.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/Draggable.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/InertiaPlugin.min.js" type="text/javascript"></script>
+  <script type="text/javascript">gsap.registerPlugin(ScrollTrigger,Draggable,InertiaPlugin);</script>
+  <script>
+// navigation function
+(() => {
+  const GAP = 8; // px between top stack and the dock line
+  const nav = document.querySelector('.stacked-nav');
+  if (!nav) return;
+  const topList    = nav.querySelector('.stacked-nav__top');
+  const bottomList = nav.querySelector('.stacked-nav__bottom');
+  let   floater    = nav.querySelector('.stacked-nav__float');
+  if (!floater) {
+    floater = document.createElement('div');
+    floater.className = 'stacked-nav__float';
+    nav.appendChild(floater);
+  }
+  // Map rows by target id (accept data-target on <li> or any descendant)
+  const items = {};
+  const order = [];
+  Array.from(bottomList.querySelectorAll('li')).forEach(li => {
+    const carrier = li.dataset.target ? li : li.querySelector('[data-target]');
+    const target  = carrier && (carrier.dataset ? carrier.dataset.target : null);
+    if (!target) return;
+    li.dataset.target = target; // normalize onto the <li> itself
+    items[target] = li;
+    order.push(target);
+  });
+  // Sections matched by data-section or id
+  const sections = order
+    .map(id => document.querySelector(`[data-section="${id}"]`) || document.getElementById(id))
+    .filter(Boolean);
+  // --- state
+  let floatingId    = null; // id currently floating
+  let pendingIndex  = null; // target index after a jump
+  let jumpLockUntil = 0;    // timestamp until which we freeze stacks post-jump
+  const clamp = (v,min,max)=> v<min?min:v>max?max:v;
+  function insertBackInOrder(li){
+    const idx = order.indexOf(li.dataset.target);
+    const candidates = Array.from(bottomList.children)
+      .filter(el => el.nodeType === 1 && el.dataset && typeof el.dataset.target === 'string');
+    const ref = candidates.find(sib => order.indexOf(sib.dataset.target) > idx) || null;
+    bottomList.insertBefore(li, ref);
+  }
+  function moveToTop(id){
+    const li = items[id];
+    if (li && li.parentNode !== topList){
+      li.classList.remove('is-hidden');
+      li.setAttribute('data-state','active'); // filled in top
+      topList.appendChild(li);
+    }
+  }
+  function moveToBottom(id){
+    const li = items[id];
+    if (li && li.parentNode !== bottomList){
+      li.setAttribute('data-state','idle');   // outline in bottom
+      insertBackInOrder(li);
+    }
+  }
+  function showFloaterFor(li){
+    floater.innerHTML = '';
+    const clone = li.cloneNode(true);
+    clone.removeAttribute('id');
+    clone.style.margin = '0';
+    clone.setAttribute('data-state','active'); // filled while floating
+    floater.appendChild(clone);
+    li.classList.add('is-hidden');             // preserve spacing
+    floater.style.display = 'block';
+  }
+  function hideFloater(){
+    floater.style.display = 'none';
+    floater.innerHTML = '';
+    const hidden = bottomList.querySelector('li.is-hidden');
+    if (hidden) hidden.classList.remove('is-hidden');
+  }
+  function syncStacksToIndex(idx){
+    if (idx < 0) return;
+    for (let i = 0; i < order.length; i++){
+      if (i < idx) moveToTop(order[i]);
+      else moveToBottom(order[i]);
+    }
+    hideFloater();
+    floatingId = null;
+  }
+  function update(){
+    // If we just jumped, keep stacks in the “jumped” state for a short lock window
+    const now = performance.now ? performance.now() : Date.now();
+    if (pendingIndex !== null && now < jumpLockUntil){
+      syncStacksToIndex(pendingIndex);
+      return; // wait until lock expires before normal tracking
+    }
+    if (pendingIndex !== null && now >= jumpLockUntil){
+      // lock expired; clear and continue with normal logic
+      pendingIndex = null;
+    }
+    const navRect = nav.getBoundingClientRect();
+    const dockY   = topList.getBoundingClientRect().bottom + GAP;
+    // 1) push passed sections to the TOP stack
+    let passed = 0;
+    sections.forEach((sec, idx) => {
+      const secTop = sec.getBoundingClientRect().top;
+      if (secTop <= dockY){ passed++; moveToTop(order[idx]); }
+      else { moveToBottom(order[idx]); }
+    });
+    // 2) candidate to float
+    const nextIdx = passed;
+    if (nextIdx >= order.length){ hideFloater(); floatingId = null; return; }
+    const id  = order[nextIdx];
+    const li  = items[id];
+    const sec = sections[nextIdx];
+    if (!li || !sec){ hideFloater(); return; }
+    const rowTop = li.getBoundingClientRect().top;
+    const secTop = sec.getBoundingClientRect().top;
+    // Don’t float/highlight until section top meets the row
+    const EPS = 1;
+    if (secTop > rowTop + EPS){
+      if (floatingId){ hideFloater(); floatingId = null; }
+      li.classList.remove('is-hidden');
+      li.setAttribute('data-state','idle');
+      return;
+    }
+    // ensure we’re floating the correct row
+    if (floatingId !== id){
+      if (floatingId && items[floatingId]) items[floatingId].classList.remove('is-hidden');
+      showFloaterFor(li);
+      floatingId = id;
+    }
+    // 3) move the floater towards the dock
+    const dist     = Math.max(1, rowTop - dockY);
+    const progress = clamp((rowTop - secTop) / dist, 0, 1);
+    const yView    = rowTop - progress * dist;
+    floater.style.top = Math.round(yView - navRect.top) + 'px';
+    // 4) dock reached → commit to TOP
+    if (progress >= 0.999){
+      li.classList.remove('is-hidden');
+      moveToTop(id);
+      hideFloater();
+      floatingId = null;
+    }
+  }
+  // Anchor clicks: pre-sync stacks, smooth-scroll, and lock state briefly
+  nav.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+    const id = link.getAttribute('href').slice(1);
+    const idx = order.indexOf(id);
+    if (idx === -1) return;
+    e.preventDefault();
+    pendingIndex = idx;
+    syncStacksToIndex(idx);
+    const target = document.getElementById(id) || document.querySelector(`[data-section="${id}"]`);
+    if (target){
+      const headerOffset = 0; // adjust if you have a fixed header
+      const dockHeight   = topList.getBoundingClientRect().height + GAP;
+      const y = window.scrollY + target.getBoundingClientRect().top - headerOffset - dockHeight;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+    // lock for ~900ms so the first scroll ticks don't undo the sync
+    jumpLockUntil = (performance.now ? performance.now() : Date.now()) + 900;
+    requestAnimationFrame(update);
+    setTimeout(update, 60);
+    setTimeout(update, 300);
+  });
+  // Hash navigation (back/forward, direct links)
+  window.addEventListener('hashchange', () => {
+    const id = location.hash.replace('#','');
+    const idx = order.indexOf(id);
+    if (idx !== -1){
+      pendingIndex = idx;
+      syncStacksToIndex(idx);
+      jumpLockUntil = (performance.now ? performance.now() : Date.now()) + 900;
+      requestAnimationFrame(update);
+      setTimeout(update, 60);
+    }
+  });
+  // Scroll/resize
+  let ticking = false;
+  function onScroll(){
+    if (!ticking){
+      ticking = true;
+      requestAnimationFrame(()=>{
+        ticking = false;
+        update();
+      });
+    }
+  }
+  document.addEventListener('DOMContentLoaded', update);
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  window.addEventListener('load', update);
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(update); }
+  update();
+})();
+</script>
+  <script>
+(() => {
+  // ---------- tiny utils ----------
+  const ready = (fn)=> document.readyState!=='loading' ? fn() : document.addEventListener('DOMContentLoaded', fn);
+  const load  = (src)=> new Promise((res, rej)=>{ const s=document.createElement('script'); s.src=src; s.onload=res; s.onerror=rej; document.head.appendChild(s); });
+  // Local-first → else CDN (swap to your Webflow Asset URL or leave as "")
+  const GSAP_LOCAL = "https://cdn.prod.website-files.com/gsap/3.13.0/gsap.min.js";
+  const GSAP_CDN   = "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js";
+  const isIOS = () =>
+    /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
+  // Minimal CSS (mask + positioning). Gradient is now drawn via inline SVG overlay (exact match to desktop).
+  function injectCSS(maskURL){
+    const css = `
+.hero-eye__svg #eyeGroup, .hero-eye__svg image { will-change: opacity, transform; transform: translateZ(0); backface-visibility: hidden; }
+.hero-eye__htmlmask{ position:absolute; inset:0; overflow:hidden; }
+.hero-eye__htmlmask img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; }
+/* apply the eye shape as CSS mask */
+.hero-eye__htmlmask{
+  -webkit-mask-image: url("${maskURL}");
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-image: url("${maskURL}");
+          mask-size: 100% 100%;
+          mask-repeat: no-repeat;
+          mask-position: center;
+}
+/* motion permission button */
+.hero-eye__motion-btn{
+  position:absolute; right:.75rem; bottom:.75rem;
+  background:#291E0F; color:#fff; font:500 12px/1.2 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  padding:.5rem .6rem; border-radius:.5rem; letter-spacing:.02em;
+  opacity:.92; border:1px solid rgba(255,255,255,.25);
+}
+@media (hover:none), (pointer:coarse){ .hero-eye{ cursor: default; } }
+`;
+    const tag = document.createElement('style');
+    tag.textContent = css;
+    document.head.appendChild(tag);
+  }
+  ready(async () => {
+    // ensure GSAP
+    if (!window.gsap){
+      try { if (GSAP_LOCAL) { await load(GSAP_LOCAL); } else { throw 0; } }
+      catch(_) { await load(GSAP_CDN); }
+    }
+    const root  = document.querySelector('.hero-eye'); if (!root) return;
+    const stage = root.querySelector('.hero-eye__stage');
+    const svg   = root.querySelector('.hero-eye__svg');
+    const group = svg?.querySelector('#eyeGroup');
+    // get mask image URL from your SVG <mask><image href="...">
+    const maskImg = svg?.querySelector('mask#eyeMask image')?.getAttribute('href') || '';
+    injectCSS(maskImg);
+    // ensure stage can host absolutely-positioned fallback
+    if (getComputedStyle(stage).position === 'static') stage.style.position = 'relative';
+    const prefersReduce   = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const hasFinePointer  = matchMedia('(hover:hover) and (pointer:fine)').matches; // desktop/laptop
+    const wantsGyro       = (root.dataset.gyro === 'true');                          // opt-in mobile gyro
+    const useIOSFallback  = isIOS();                                                 // iOS → HTML+SVG overlay
+    // ---------- TILT ----------
+    if (!prefersReduce){
+      initTilt({ root, stage, hasFinePointer, wantsGyro });
+    }
+    // ---------- SLIDESHOW ----------
+    if (useIOSFallback){
+      buildHTMLMaskSlideshowWithSVGOverlay({ root, svg });
+    } else {
+      buildSVGSlideshow({ svg, group });
+    }
+  });
+  // ---------------- tilt (desktop mouse, mobile gyro reversed by default) ----------------
+  function initTilt({ root, stage, hasFinePointer, wantsGyro }){
+    const maxTiltDesktop = parseFloat(root.dataset.tilt || 6);
+    const maxTiltMobile  = parseFloat(root.dataset.gyroTilt || Math.max(8, maxTiltDesktop * 1.8));
+    const gyroDiv        = parseFloat(root.dataset.gyroDiv || 30);
+    const smooth         = parseFloat(root.dataset.gyroSmooth || 0.18);
+    const invertGyro     = (root.dataset.gyroInvert ?? 'true') !== 'false'; // default = reversed (eye "follows" you)
+    const speed          = parseFloat(root.dataset.speed || 6);
+    const qRotX = gsap.quickTo(stage, "rotationX", { duration: 1/speed, ease: "power2.out" });
+    const qRotY = gsap.quickTo(stage, "rotationY", { duration: 1/speed, ease: "power2.out" });
+    const qScale= gsap.quickTo(stage, "scale",     { duration: 1/speed, ease: "power2.out" });
+    gsap.set(stage, { transformOrigin: "50% 50%", transformPerspective: 2000 });
+    if (hasFinePointer){
+      // Desktop mouse tilt
+      const move = (e)=>{
+        const r = root.getBoundingClientRect();
+        const cx = r.left + r.width/2, cy = r.top + r.height/2;
+        const mx = ((e.clientX ?? cx) - cx) / (r.width/2);
+        const my = ((e.clientY ?? cy) - cy) / (r.height/2);
+        qRotY(gsap.utils.clamp(-maxTiltDesktop, maxTiltDesktop,  mx * maxTiltDesktop));
+        qRotX(gsap.utils.clamp(-maxTiltDesktop, maxTiltDesktop, -my * maxTiltDesktop));
+        qScale(1.02);
+      };
+      const leave = ()=>{ qRotX(0); qRotY(0); qScale(1); };
+      root.addEventListener('mousemove', move, { passive:true });
+      root.addEventListener('mouseleave', leave);
+      return;
+    }
+    // Touch devices: only if opted-in
+    if (!wantsGyro) return;
+    // Permission button for iOS
+    const btn = document.createElement('button');
+    btn.className = 'hero-eye__motion-btn';
+    btn.type = 'button';
+    btn.textContent = 'Enable motion';
+    root.appendChild(btn);
+    const clamp = gsap.utils.clamp;
+    let baseB = null, baseG = null;   // calibration baselines
+    let emaX = 0, emaY = 0;           // smoothed deltas
+    function onOrient(e){
+      const beta  = e.beta  ?? 0;   // front/back [-180..180]
+      const gamma = e.gamma ?? 0;   // left/right [-90..90]
+      if (baseB === null || baseG === null){ baseB = beta; baseG = gamma; }
+      // delta from baseline, scaled for sensitivity
+      const dx = (gamma - baseG) / gyroDiv;
+      const dy = (beta  - baseB) / gyroDiv;
+      // EMA smoothing
+      emaX += (dx - emaX) * smooth;
+      emaY += (dy - emaY) * smooth;
+      // raw rotations
+      const rawY = clamp(-maxTiltMobile, maxTiltMobile,  emaX * maxTiltMobile);
+      const rawX = clamp(-maxTiltMobile, maxTiltMobile, -emaY * maxTiltMobile);
+      // invert on mobile so the eye "follows" you (default ON)
+      const rotY = invertGyro ? -rawY : rawY;
+      const rotX = invertGyro ? -rawX : rawX;
+      qRotY(rotY);
+      qRotX(rotX);
+      qScale(1.02);
+    }
+    async function enableMotion(){
+      try{
+        if (typeof DeviceOrientationEvent !== "undefined" &&
+            typeof DeviceOrientationEvent.requestPermission === "function"){
+          const state = await DeviceOrientationEvent.requestPermission();
+          if (state !== 'granted') return;
+        }
+        window.addEventListener('deviceorientation', onOrient, true);
+        btn.remove();
+      }catch(e){ /* denied/unsupported */ }
+    }
+    btn.addEventListener('click', enableMotion, { once:true });
+    // Double-tap to recalibrate baseline
+    let lastTap = 0;
+    root.addEventListener('touchend', () => {
+      const now = Date.now();
+      if (now - lastTap < 350){ baseB = baseG = null; }
+      lastTap = now;
+    });
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden){ qRotX(0); qRotY(0); qScale(1); }
+    });
+  }
+  // -------- iOS fallback: HTML <img> stack masked + exact SVG gradient overlay --------
+  function buildHTMLMaskSlideshowWithSVGOverlay({ root, svg }){
+    const stage = root.querySelector('.hero-eye__stage');
+    const svgImgs = Array.from(svg.querySelectorAll('#eyeGroup image'));
+    if (!svgImgs.length) return;
+    // Container for masked HTML images
+    const htmlMask = document.createElement('div');
+    htmlMask.className = 'hero-eye__htmlmask';
+    stage.appendChild(htmlMask);
+    // Mirror the SVG images as HTML <img>
+    const imgs = svgImgs.map((im, i)=>{
+      const el = document.createElement('img');
+      el.src = im.getAttribute('href');
+      el.loading = i ? 'lazy' : 'eager';
+      el.decoding = 'async';
+      el.style.opacity = i === 0 ? '1' : '0';
+      htmlMask.appendChild(el);
+      return el;
+    });
+    // **Exact** gradient overlay as inline SVG (same as desktop)
+    const overlay = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    overlay.setAttribute('viewBox', '0 0 1112 826');
+    overlay.setAttribute('preserveAspectRatio','xMidYMid meet');
+    overlay.style.position = 'absolute';
+    overlay.style.inset = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.pointerEvents = 'none';
+    const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+    const grad = document.createElementNS('http://www.w3.org/2000/svg', 'radialGradient');
+    grad.setAttribute('id', 'eyeVignetteMobile');
+    grad.setAttribute('cx', '0');
+    grad.setAttribute('cy', '0');
+    grad.setAttribute('r',  '1');
+    grad.setAttribute('gradientUnits', 'userSpaceOnUse');
+    // Desktop values: translate(556 413) rotate(90) scale(412.849 556)
+    grad.setAttribute('gradientTransform', 'translate(556 413) rotate(90) scale(412.849 556)');
+    const stop1 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+    stop1.setAttribute('offset', '0.668269');
+    stop1.setAttribute('stop-color', '#291E0F');
+    stop1.setAttribute('stop-opacity', '0');
+    const stop2 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+    stop2.setAttribute('offset', '1');
+    stop2.setAttribute('stop-color', '#291E0F');
+    stop2.setAttribute('stop-opacity', '1');
+    grad.appendChild(stop1);
+    grad.appendChild(stop2);
+    defs.appendChild(grad);
+    overlay.appendChild(defs);
+    const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    rect.setAttribute('x','0'); rect.setAttribute('y','0');
+    rect.setAttribute('width','1112'); rect.setAttribute('height','826');
+    rect.setAttribute('fill','url(#eyeVignetteMobile)');
+    overlay.appendChild(rect);
+    // Add overlay above images
+    htmlMask.appendChild(overlay);
+    // Hide the original SVG; we render with HTML masked stack on iOS
+    svg.style.display = 'none';
+    // Animate (no animation if Reduce Motion)
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let i = 0; const HOLD = 2.6, FADE = 0.9;
+    function cycle(){
+      const cur = imgs[i];
+      const nxt = imgs[(i + 1) % imgs.length];
+      gsap.to(cur, { opacity: 0, duration: FADE, ease: 'power2.inOut' });
+      gsap.to(nxt, { opacity: 1, duration: FADE, ease: 'power2.inOut',
+        onComplete(){ i = (i + 1) % imgs.length; gsap.delayedCall(HOLD, cycle); }
+      });
+    }
+    gsap.delayedCall(HOLD, cycle);
+  }
+  // ---------------- non-iOS: use your original SVG (with its built-in gradient) ----------------
+  function buildSVGSlideshow({ svg, group }){
+    if (!svg || !group) return;
+    const photos = Array.from(svg.querySelectorAll('#eyeGroup image'));
+    if (photos.length < 2) return;
+    gsap.set([group, ...photos], { force3D:true, transform:"translateZ(0)", willChange:"opacity,transform", backfaceVisibility:"hidden" });
+    photos.forEach((img, i) => gsap.set(img, { opacity: i === 0 ? 1 : 0 }));
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let i = 0; const HOLD = 2.6, FADE = 0.9;
+    function cycle(){
+      const cur = photos[i];
+      const nxt = photos[(i + 1) % photos.length];
+      gsap.to(cur, { opacity: 0, duration: FADE, ease: 'power2.inOut' });
+      gsap.to(nxt, { opacity: 1, duration: FADE, ease: 'power2.inOut',
+        onComplete(){ i = (i + 1) % photos.length; gsap.delayedCall(HOLD, cycle); }
+      });
+    }
+    gsap.delayedCall(HOLD, cycle);
+  }
+})();
+</script>
+  <script>
+// ICON NAV VISIBILITY
+(function(){
+  function ready(fn){document.readyState!=='loading'?fn():document.addEventListener('DOMContentLoaded',fn);}
+  function load(src){return new Promise((r,j)=>{const s=document.createElement('script');s.src=src;s.onload=r;s.onerror=j;document.head.appendChild(s);});}
+  const GSAP_LOCAL = "https://cdn.prod.website-files.com/gsap/3.13.0/gsap.min.js";
+  const ST_LOCAL   = "https://cdn.prod.website-files.com/gsap/3.13.0/ScrollTrigger.min.js";
+  const GSAP_CDN   = "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js";
+  const ST_CDN     = "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js";
+  ready(async function(){
+    if(!window.gsap){
+      try{ if (GSAP_LOCAL){ await load(GSAP_LOCAL); } else { throw 0; } }
+      catch(_){ await load(GSAP_CDN); }
+    }
+    if(!gsap.ScrollTrigger){
+      try{ if (ST_LOCAL){ await load(ST_LOCAL); } else { throw 0; } }
+      catch(_){ await load(ST_CDN); }
+      gsap.registerPlugin(ScrollTrigger);
+    }
+    const mm = gsap.matchMedia();
+    mm.add("(min-width: 992px)", () => {
+      const el = document.querySelector(".icon-nav"); if(!el) return;
+      ScrollTrigger.create({
+        trigger: document.body,
+        start: () => "top -" + window.innerHeight,
+        end:  999999,
+        toggleClass: { targets: el, className: "is-on" },
+        invalidateOnRefresh: true
+      });
+      window.addEventListener("resize", () => ScrollTrigger.refresh());
+    });
+  });
+})();
+</script>
+  <script>
+// Gallery: non-looping, start centered on data-start slide, GSAP Inertia, Firefox-safe
+(function(){
+  function onReady(fn){ document.readyState!=='loading' ? fn() : document.addEventListener('DOMContentLoaded', fn); }
+  function load(src){ return new Promise((r,j)=>{ const s=document.createElement('script'); s.src=src; s.onload=r; s.onerror=j; document.head.appendChild(s); }); }
+  const GSAP_LOCAL     = "https://cdn.prod.website-files.com/gsap/3.13.0/gsap.min.js";
+  const DRAG_LOCAL     = "https://cdn.prod.website-files.com/gsap/3.13.0/Draggable.min.js";
+  const INERTIA_LOCAL  = "https://cdn.prod.website-files.com/gsap/3.13.0/InertiaPlugin.min.js";
+  const GSAP_CDN       = "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js";
+  const DRAG_CDN       = "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js";
+  const INERTIA_CDN    = "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/InertiaPlugin.min.js";
+  onReady(async function(){
+    if (!window.gsap){ try{ if (GSAP_LOCAL) await load(GSAP_LOCAL); else throw 0; } catch(_){ await load(GSAP_CDN); } }
+    if (!window.Draggable){ try{ if (DRAG_LOCAL) await load(DRAG_LOCAL); else throw 0; } catch(_){ await load(DRAG_CDN); } }
+    if (!gsap.plugins.InertiaPlugin){ try{ if (INERTIA_LOCAL) await load(INERTIA_LOCAL); else throw 0; } catch(_){ await load(INERTIA_CDN); } }
+    initGalleries();
+    // rebuild on load/fonts/resize (debounced)
+    window.addEventListener('load', () => document.querySelectorAll('.index-gallery').forEach(rebuild));
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(()=> document.querySelectorAll('.index-gallery').forEach(rebuild));
+    }
+    let raf;
+    window.addEventListener('resize', ()=>{
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(()=> document.querySelectorAll('.index-gallery').forEach(rebuild));
+    });
+  });
+  const state = new WeakMap();
+  function initGalleries(){
+    document.querySelectorAll('.index-gallery').forEach(buildOne);
+  }
+  function rebuild(root){
+    const st = state.get(root);
+    if (!st) return;
+    st.draggable && st.draggable.kill();
+    gsap.set(st.track, { clearProps: 'x' });
+    buildOne(root);
+  }
+  async function waitForImages(container){
+    const imgs = Array.from(container.querySelectorAll('img'));
+    if (!imgs.length) return;
+    await Promise.all(imgs.map(img=>{
+      img.setAttribute('draggable','false');
+      if (img.complete && img.naturalWidth) return Promise.resolve();
+      return img.decode?.().catch(()=>{});
+    }));
+  }
+  function observeImageChanges(root, rebuildFn){
+    const imgs = root.querySelectorAll('img');
+    imgs.forEach(img=> img.addEventListener('load', ()=> rebuildFn(root), { passive:true }));
+    const mo = new MutationObserver((muts)=>{
+      for (const m of muts){
+        if (m.type === 'attributes' && (m.attributeName === 'src' || m.attributeName === 'srcset')){
+          /* when it loads, the listener above will rebuild */
+        }
+      }
+    });
+    imgs.forEach(img=> mo.observe(img, { attributes:true, attributeFilter:['src','srcset'] }));
+  }
+  function cumulative(values){
+    const out = [0];
+    for (let i=0;i<values.length-1;i++) out.push(out[i] + values[i]);
+    return out;
+  }
+  async function buildOne(root){
+    if (!root.hasAttribute('tabindex')) root.setAttribute('tabindex','0');
+    const viewport = root.querySelector('.index-gallery-viewport') || root;
+    const track    = root.querySelector('.index-gallery-track');
+    if (!track) return;
+    // Firefox friendliness
+    track.style.touchAction = 'pan-x';
+    track.style.zIndex = '1';
+    await waitForImages(track);
+    const slides = Array.from(track.children);
+    if (!slides.length) return;
+    observeImageChanges(root, rebuild);
+    // geometry
+    const cs  = getComputedStyle(track);
+    const GAP = parseFloat(cs.columnGap || cs.gap || 0) || 0;
+    const widths = slides.map(el => el.getBoundingClientRect().width || el.offsetWidth || 0);
+    // left edge for each slide: sum of previous widths + gaps
+    const lefts = widths.map((_,i)=> {
+      let sum = 0;
+      for (let k=0;k<i;k++) sum += widths[k];
+      return sum + i*GAP;
+    });
+    const centers    = widths.map((w,i)=> lefts[i] + w/2);
+    const totalWidth = widths.reduce((a,b)=>a+b, 0) + GAP * Math.max(0, slides.length - 1);
+    const vpWidth   = viewport.getBoundingClientRect().width || viewport.offsetWidth || 0;
+    const vpCenter  = vpWidth / 2;
+    // ---- New bounds: allow centering the first and last slides ----
+    // maxX = position where slide 0 is centered
+    // minX = position where last slide is centered
+    const maxX = vpCenter - centers[0];
+    const minX = vpCenter - centers[slides.length - 1];
+    // If content doesn't exceed viewport, clamp both to the same so it won't move
+    const canScroll = totalWidth > vpWidth + 1 && (maxX - minX) > 1;
+    // Which slide to center on load? (1-based via data-start, default 1)
+    const attr = root.getAttribute('data-start');
+    const startIndex1 = Math.max(1, Math.min(slides.length, parseInt(attr || '1', 10) || 1));
+    const i0 = startIndex1 - 1;
+    let startX = vpCenter - centers[i0];                // center chosen slide
+    startX = canScroll ? Math.min(maxX, Math.max(minX, startX)) : 0; // if not scrollable, zero
+    gsap.set(track, { x: startX });
+    // DRAGGABLE with Inertia
+    const drag = Draggable.create(track, {
+      type: 'x',
+      inertia: true,
+      bounds: canScroll ? { minX, maxX } : { minX: 0, maxX: 0 },
+      edgeResistance: 0.15,
+      zIndexBoost: false,
+      dragClickables: true,
+      minimumMovement: 3,
+      onPress(e){ if (e && e.target && e.target.tagName === 'IMG') e.preventDefault(); },
+      onDragStart(){ track.classList.add('is-dragging'); },
+      onDragEnd(){   track.classList.remove('is-dragging'); }
+    })[0];
+    // Horizontal wheel / trackpad (clamped + tiny easing)
+    root.addEventListener('wheel', (e)=>{
+      if (!canScroll) return;
+      const absX = Math.abs(e.deltaX), absY = Math.abs(e.deltaY);
+      const isHorizontal = absX > absY * 1.2 && absX > 2;
+      if (!isHorizontal) return;
+      e.preventDefault();
+      const currentX = parseFloat(gsap.getProperty(track,'x')) || 0;
+      let nextX = currentX - e.deltaX;
+      nextX = Math.min(maxX, Math.max(minX, nextX));
+      gsap.to(track, { x: nextX, duration: 0.12, ease: "power1.out" });
+    }, { passive:false });
+    state.set(root, { track, draggable: drag });
+  }
+})();
+</script>
+  <script>
+// Accordion function (Safari-safe height, ResizeObserver, GSAP)
+(function(){
+  function onReady(fn){ document.readyState!=='loading' ? fn() : document.addEventListener('DOMContentLoaded', fn); }
+  // GSAP loader (local → CDN)
+  const GSAP_LOCAL = "https://cdn.prod.website-files.com/gsap/3.13.0/gsap.min.js";
+  const GSAP_CDN   = "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js";
+  onReady(async function(){
+    if(!window.gsap){
+      await new Promise((res)=> {
+        const s=document.createElement('script');
+        s.src = GSAP_LOCAL || GSAP_CDN;
+        s.onerror = ()=>{ const f=document.createElement('script'); f.src=GSAP_CDN; f.onload=res; document.head.appendChild(f); };
+        s.onload = res;
+        document.head.appendChild(s);
+      });
+    }
+    initIndexAccordions();
+  });
+  function initIndexAccordions(){
+    const accordions = gsap.utils.toArray('.index-accordion');
+    accordions.forEach(acc => {
+      const mode  = acc.getAttribute('data-accordion') || 'single'; // 'single' | 'multiple'
+      const items = gsap.utils.toArray('.index-accordion-item', acc);
+      items.forEach(item => {
+        const trigger = item.querySelector('.index-accordion-trigger');
+        const panel   = item.querySelector('.index-accordion-panel');
+        const inner   = item.querySelector('.index-accordion-panel__inner');
+        const icon    = item.querySelector('.index-accordion-icon, .icon-rot');
+        if (!trigger || !panel || !inner) return;
+        // ARIA / IDs
+        const pid = panel.id || `acc-panel-${Math.random().toString(36).slice(2)}`;
+        const tid = trigger.id || `acc-btn-${Math.random().toString(36).slice(2)}`;
+        panel.id = pid; trigger.id = tid;
+        trigger.setAttribute('aria-controls', pid);
+        panel.setAttribute('role','region');
+        panel.setAttribute('aria-labelledby', tid);
+        trigger.setAttribute('aria-expanded','false');
+        if (trigger.tagName === 'A') trigger.setAttribute('role','button');
+        // Start closed (jump)
+        closeItem(item, { jump:true });
+        // Interactions
+        trigger.addEventListener('click', (e)=>{
+          if (trigger.tagName === 'A') e.preventDefault();
+          toggleItem(item, mode, items);
+        });
+        trigger.addEventListener('keydown', (e)=>{
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleItem(item, mode, items); }
+        });
+        // ---------- helpers ----------
+        function measureInnerHeight(p, inn){
+          p.removeAttribute('hidden'); // must be measurable
+          // Force a reflow so Safari computes layout before reading scrollHeight
+          // eslint-disable-next-line no-unused-expressions
+          p.offsetWidth;
+          return inn.scrollHeight || inn.offsetHeight || 0;
+        }
+        function attachResizeObserver(p, inn, target){
+          if (p._ro) return;
+          p._ro = new ResizeObserver(() => {
+            if (target.getAttribute('data-state') !== 'open') return;
+            const newH = inn.scrollHeight || 0;
+            const currentH = parseFloat(getComputedStyle(p).height) || 0;
+            if (Math.abs(newH - currentH) > 1){
+              gsap.to(p, { height: newH, duration: 0.2, ease: "power1.out", onComplete(){
+                p.style.height = 'auto';
+              }});
+            }
+          });
+          p._ro.observe(inn);
+        }
+        function openItem(target){
+          const p   = target.querySelector('.index-accordion-panel');
+          const inn = target.querySelector('.index-accordion-panel__inner');
+          const trg = target.querySelector('.index-accordion-trigger');
+          const ic  = target.querySelector('.index-accordion-icon, .icon-rot');
+          target.setAttribute('data-state','open');
+          trg.setAttribute('aria-expanded','true');
+          const h = measureInnerHeight(p, inn);
+          gsap.fromTo(p, { height: 0, autoAlpha: 0 }, {
+            height: h, autoAlpha: 1, duration: .35, ease: "power2.out",
+            onComplete(){ p.style.height = 'auto'; }
+          });
+          if (ic) gsap.to(ic, { rotate: 45, duration: .25, ease: "power2.out" });
+          attachResizeObserver(p, inn, target);
+          // nudge once when any image finishes loading
+          p.querySelectorAll('img').forEach(img=>{
+            img.addEventListener('load', () => {
+              if (target.getAttribute('data-state') !== 'open') return;
+              const nh = inn.scrollHeight || 0;
+              gsap.to(p, { height: nh, duration: .2, ease: "power1.out", onComplete(){ p.style.height='auto'; }});
+            }, { once:true, passive:true });
+          });
+        }
+        function closeItem(target, opts={}){
+          const p   = target.querySelector('.index-accordion-panel');
+          const trg = target.querySelector('.index-accordion-trigger');
+          const ic  = target.querySelector('.index-accordion-icon, .icon-rot');
+          target.setAttribute('data-state','closed');
+          trg.setAttribute('aria-expanded','false');
+          if (opts.jump){
+            p.style.height='0px';
+            p.style.opacity=0;
+            p.setAttribute('hidden','');
+            if (ic) gsap.set(ic,{ rotate:0 });
+            return;
+          }
+          const currentH = parseFloat(getComputedStyle(p).height) || 0;
+          gsap.fromTo(p, { height: currentH, autoAlpha: 1 }, {
+            height: 0, autoAlpha: 0, duration: .3, ease: "power2.in",
+            onComplete(){ p.setAttribute('hidden',''); }
+          });
+          if (ic) gsap.to(ic, { rotate: 0, duration: .25, ease: "power2.in" });
+        }
+        function toggleItem(target, mode, all){
+          const isOpen = target.getAttribute('data-state') === 'open';
+          if (isOpen){
+            closeItem(target);
+          } else {
+            if (mode === 'single'){
+              all.forEach(it => { if (it !== target && it.getAttribute('data-state')==='open') closeItem(it); });
+            }
+            openItem(target);
+          }
+        }
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>
