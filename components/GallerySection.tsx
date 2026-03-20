@@ -20,23 +20,18 @@ export default function GallerySection({ title, images }: Props) {
 
     let draggable: { kill: () => void } | null = null
     let killed = false
-
-    const waitForImages = (container: HTMLElement) => {
-      const imgs = Array.from(container.querySelectorAll('img'))
-      return Promise.all(
-        imgs.map(img => {
-          img.setAttribute('draggable', 'false')
-          if (img.complete && img.naturalWidth) return Promise.resolve()
-          return (img as HTMLImageElement & { decode?: () => Promise<void> }).decode?.().catch(() => { }) ?? Promise.resolve()
-        })
-      )
-    }
+    let cleanupListeners: (() => void) | null = null
 
     const build = async () => {
       const { gsap, Draggable } = await import('@/lib/gsap').then(m => m.getGsap())
       if (killed) return
 
-      await waitForImages(track)
+      // Prevent native image drag without waiting for decode (img.decode() hangs
+      // in Chrome/Safari for off-screen lazy images, blocking the whole setup)
+      Array.from(track.querySelectorAll('img')).forEach(img => img.setAttribute('draggable', 'false'))
+
+      // One rAF so the browser has committed layout before we measure
+      await new Promise<void>(resolve => requestAnimationFrame(() => resolve()))
       if (killed) return
 
       const viewport = root.querySelector<HTMLElement>('.index-gallery-viewport') ?? root
@@ -100,7 +95,7 @@ export default function GallerySection({ title, images }: Props) {
       }
       window.addEventListener('resize', debouncedResize)
 
-      return () => {
+      cleanupListeners = () => {
         root.removeEventListener('wheel', onWheel)
         window.removeEventListener('resize', debouncedResize)
       }
@@ -111,6 +106,7 @@ export default function GallerySection({ title, images }: Props) {
     return () => {
       killed = true
       draggable?.kill()
+      cleanupListeners?.()
     }
   }, [])
 
@@ -125,7 +121,7 @@ export default function GallerySection({ title, images }: Props) {
         className="index-gallery relative overscroll-x-contain outline-none focus-visible:outline focus-visible:outline-[rgba(255,255,255,.35)] focus-visible:outline-offset-1"
       >
         <div className="index-gallery-viewport overflow-hidden w-full touch-pan-y">
-          <div ref={trackRef} className="index-gallery-track flex items-end gap-[var(--gap)] will-change-transform cursor-grab relative z-[1] touch-pan-x">
+          <div ref={trackRef} className="index-gallery-track flex items-end gap-[var(--gap)] will-change-transform cursor-grab relative z-[1] touch-none">
             {images.map((img, i) => (
               <div key={i} className="index-slide flex-none flex flex-col min-w-0">
                 <Image

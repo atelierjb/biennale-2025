@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useLayoutEffect, useRef } from 'react'
 import { usePageTransition } from '@/lib/transition-context'
 
 type Props = {
@@ -10,6 +10,21 @@ type Props = {
 export default function PageTransition({ children }: Props) {
   const ref = useRef<HTMLElement>(null)
   const { register } = usePageTransition()
+
+  // Runs synchronously before the browser paints — scroll position is correct
+  // on the very first frame, so the user never sees the page at the top.
+  useLayoutEffect(() => {
+    const savedY = sessionStorage.getItem('lang-switch-scrollY')
+    if (savedY !== null) {
+      sessionStorage.removeItem('lang-switch-scrollY')
+      // Temporarily override `scroll-behavior: smooth` so the restoration
+      // is instantaneous — the inline style wins the cascade, and since
+      // scrollTo() is synchronous the override can be removed immediately after.
+      document.documentElement.style.scrollBehavior = 'auto'
+      window.scrollTo(0, parseInt(savedY, 10))
+      document.documentElement.style.scrollBehavior = ''
+    }
+  }, [])
 
   useEffect(() => {
     const el = ref.current

@@ -319,7 +319,7 @@ export default function HeroSection({ dates, location, partnerLogos }: Props) {
   }, [])
 
   return (
-    <section id="hero" className="relative w-full h-svh [overflow:clip] flex items-center justify-center mb-24">
+    <section id="hero" className="relative w-full h-svh flex items-center justify-center mb-24">
       <div
         ref={eyeRef}
         className="hero-eye w-screen max-h-[95vh] px-[12vw] my-[7vh] aspect-[1112/826] cursor-move max-nav:px-[5vw] [@media(hover:none)]:cursor-default"

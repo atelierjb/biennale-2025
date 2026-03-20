@@ -16,6 +16,7 @@ export default function LangLink({ href, className, children }: Props) {
 
   const handleClick = useCallback(async (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
+    sessionStorage.setItem('lang-switch-scrollY', String(window.scrollY))
     await trigger()
     router.push(href, { scroll: false })
   }, [href, router, trigger])

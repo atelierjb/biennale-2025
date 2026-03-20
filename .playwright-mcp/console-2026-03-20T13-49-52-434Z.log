@@ -1,0 +1,39 @@
+[     482ms] [WARNING] Image with src "http://localhost:3000/icons/home-icon.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     482ms] [WARNING] Image with src "http://localhost:3000/icons/da-filled.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     482ms] [WARNING] Image with src "http://localhost:3000/icons/eng-outlined.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     517ms] [ERROR] Error: <g> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[     518ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[     518ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[     518ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[     518ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[     519ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[     519ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[    3449ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    3453ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    3478ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    3488ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    4687ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    4703ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    4728ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    4738ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   18528ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   18545ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   18562ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   18571ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   20274ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   20291ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   20316ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   20324ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   20341ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   20357ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   20457ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   20474ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   20491ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   20724ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   20741ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   22696ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   22713ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   22729ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   22746ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   22762ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   22779ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297

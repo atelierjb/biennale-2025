@@ -1,0 +1,236 @@
+[     404ms] [WARNING] Image with src "http://localhost:3000/icons/home-icon.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     405ms] [WARNING] Image with src "http://localhost:3000/icons/da-filled.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     405ms] [WARNING] Image with src "http://localhost:3000/icons/eng-outlined.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     418ms] [ERROR] Error: <g> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[     419ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[     419ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[     419ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[     419ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[     419ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[     419ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[  352109ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352124ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352156ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352173ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352190ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352207ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352223ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352240ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352459ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352474ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352490ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352507ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352524ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352541ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352557ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352574ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352591ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352607ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352624ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352840ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352857ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352873ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352890ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352907ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352923ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352940ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352957ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352974ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  352991ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353007ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353024ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353040ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353091ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353107ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353123ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353140ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353157ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353173ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353190ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353207ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353224ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353241ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353257ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353274ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353790ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353808ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353825ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353841ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353857ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353873ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353891ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353907ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353924ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  353932ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354440ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354457ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354474ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354490ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354507ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354523ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354574ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354590ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354607ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354640ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354757ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354774ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354790ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354807ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354824ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354841ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354857ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354874ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354891ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354907ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354924ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354941ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354957ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  354965ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356168ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356169ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356169ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356169ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356170ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356170ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356174ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356182ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356341ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356357ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356390ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356407ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356424ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356440ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356457ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356473ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356490ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356507ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356524ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356758ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356774ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356791ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356806ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356825ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356841ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356857ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356874ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356894ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356907ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356926ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356941ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356957ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356974ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  356991ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357007ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357024ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357040ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357057ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357074ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357091ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357107ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357124ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357142ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357157ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357174ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357191ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357208ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357225ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357240ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357257ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357274ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357292ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357307ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357327ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357340ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357357ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357379ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357390ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357407ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  357423ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358107ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358125ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358140ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358157ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358176ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358190ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358207ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358224ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358240ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358257ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358491ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358508ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358523ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358541ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358558ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358565ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358924ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358941ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  358957ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359124ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359143ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359159ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359176ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359191ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359208ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359241ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359275ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359291ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359342ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359394ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359407ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359508ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359541ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  359892ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360425ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360441ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360457ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360474ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360491ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360507ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360524ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360541ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360557ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360574ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360591ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360807ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360824ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360841ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360857ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360874ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360891ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360908ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360924ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  360941ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  361468ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  395779ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  395779ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  397476ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  397510ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  397527ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  397624ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  397658ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  397659ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  406590ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  406590ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  441142ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  441143ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  448065ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  448071ms] [WARNING] scale not eligible for reset @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[ 1025703ms] [ERROR] Error: <g> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1025704ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1025704ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1025704ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1025704ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1025704ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1025704ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1025705ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1025705ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1025705ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1025705ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1025705ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1142259ms] [ERROR] Error: <g> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1142259ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1142259ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1142259ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1142259ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1142259ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232
+[ 1142260ms] [ERROR] Error: <image> attribute transform: Expected transform function, "null". @ http://localhost:3000/_next/static/chunks/node_modules_gsap_7421d973._.js:4232

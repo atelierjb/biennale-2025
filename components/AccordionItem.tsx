@@ -90,13 +90,13 @@ export default function AccordionItem({ exhibitor, panelId, triggerId }: Props) 
           {/* Text */}
           <div className="grid grid-cols-1 sm:grid-cols-2 mb-8 gap-5">
             <div className="flex flex-col gap-2">
-              <div className="font-semibold text-2xl/[1] md:text-3xl/[1] uppercase tracking-[-0.005em]">{exhibitor.workTitle}</div>
+              <div className="font-bold text-2xl/[1] md:text-3xl/[1] uppercase tracking-[-0.0025em]">{exhibitor.workTitle}</div>
               <div className="text-lg/[1.15] md:text-xl/[1.15] font-semibold flex flex-col gap-2 uppercase max-w-[80%]">
                 {exhibitor.materials}
                 {exhibitor.dimensions ? `\n${exhibitor.dimensions}` : ''}
               </div>
             </div>
-            <div className="text-base/[1.3] md:text-lg/[1.3] font-semibold flex flex-col gap-2">
+            <div className="text-base/[1.25] md:text-xl/[1.2] font-semibold flex flex-col gap-2">
               {exhibitor.description}
             </div>
           </div>

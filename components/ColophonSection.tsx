@@ -43,7 +43,7 @@ export default function ColophonSection({ supportLabel, credits, copyright, date
         {credits.map((c, i) => (
           <div key={i} className={`flex flex-col gap-2${i === 3 ? ' mb-4' : ''}`}>
             <div className="label-xs">{c.label}</div>
-            <div className="text-xl/[1.15] md:text-2xl/[1.15] tracking-[-0.0025em] font-bold">{c.value}</div>
+            <div className="text-2xl/[1.2] md:text-3xl/[1.2] tracking-[-0.0025em] font-bold">{c.value}</div>
           </div>
         ))}
       </div>
