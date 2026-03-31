@@ -306,7 +306,7 @@ export const exhibitorsDa: Exhibitor[] = [
     images: {
       type: 'portrait-pair',
       slides: [
-        { src: '/images/18-exhibition-portrait_1.jpg', alt: 'IN SEARCH OF SOMETHING ELSE / hope is a powerful thing by Maria Bang Espersen', sizes: LP },
+        { src: '/images/18-exhibition-portrait_1-new.jpg', alt: 'IN SEARCH OF SOMETHING ELSE / hope is a powerful thing by Maria Bang Espersen', sizes: LP },
         { src: '/images/18-exhibition-portrait_2.jpg', alt: 'IN SEARCH OF SOMETHING ELSE / hope is a powerful thing by Maria Bang Espersen', sizes: LP },
       ],
     },

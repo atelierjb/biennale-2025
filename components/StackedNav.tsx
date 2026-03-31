@@ -60,9 +60,9 @@ export default function StackedNav({ labels }: Props) {
     if (!nav) return
 
     const GAP = 8
-    const topList    = nav.querySelector<HTMLUListElement>('.stacked-nav__top')!
+    const topList = nav.querySelector<HTMLUListElement>('.stacked-nav__top')!
     const bottomList = nav.querySelector<HTMLUListElement>('.stacked-nav__bottom')!
-    let floater      = nav.querySelector<HTMLDivElement>('.stacked-nav__float')!
+    let floater = nav.querySelector<HTMLDivElement>('.stacked-nav__float')!
     if (!topList || !bottomList || !floater) return
 
     const order = NAV_ITEMS.map(n => n.id)
@@ -147,7 +147,7 @@ export default function StackedNav({ labels }: Props) {
       }
 
       const navRect = nav!.getBoundingClientRect()
-      const dockY   = topList.getBoundingClientRect().bottom + GAP
+      const dockY = topList.getBoundingClientRect().bottom + GAP
 
       let passed = 0
       sections.forEach((sec, idx) => {
@@ -159,8 +159,8 @@ export default function StackedNav({ labels }: Props) {
       const nextIdx = passed
       if (nextIdx >= order.length) { hideFloater(); floatingId = null; return }
 
-      const id  = order[nextIdx]
-      const li  = items[id]
+      const id = order[nextIdx]
+      const li = items[id]
       const sec = sections[nextIdx]
       if (!li || !sec) { hideFloater(); return }
 
@@ -181,9 +181,9 @@ export default function StackedNav({ labels }: Props) {
         floatingId = id
       }
 
-      const dist     = Math.max(1, rowTop - dockY)
+      const dist = Math.max(1, rowTop - dockY)
       const progress = clamp((rowTop - secTop) / dist, 0, 1)
-      const yView    = rowTop - progress * dist
+      const yView = rowTop - progress * dist
       floater.style.top = Math.round(yView - navRect.top) + 'px'
 
       if (progress >= 0.999) {
@@ -194,7 +194,7 @@ export default function StackedNav({ labels }: Props) {
       }
     }
 
-    // Anchor clicks
+    // Anchor clicks — just scroll; update() handles stack state via scroll events
     nav.addEventListener('click', (e) => {
       const link = (e.target as Element).closest<HTMLAnchorElement>('a[href^="#"]')
       if (!link) return
@@ -202,23 +202,17 @@ export default function StackedNav({ labels }: Props) {
       const idx = order.indexOf(id)
       if (idx === -1) return
       e.preventDefault()
-      pendingIndex = idx
-      syncStacksToIndex(idx)
       const target = document.getElementById(id)
       if (target) {
-        const dockHeight = topList.getBoundingClientRect().height + GAP
-        const y = window.scrollY + target.getBoundingClientRect().top - dockHeight
+        const dockY = topList.getBoundingClientRect().bottom + GAP
+        const y = window.scrollY + target.getBoundingClientRect().top - dockY
         window.scrollTo({ top: y, behavior: 'smooth' })
       }
-      jumpLockUntil = performance.now() + 900
-      requestAnimationFrame(update)
-      setTimeout(update, 60)
-      setTimeout(update, 300)
     })
 
     // Hash change
     const onHashChange = () => {
-      const id  = location.hash.replace('#', '')
+      const id = location.hash.replace('#', '')
       const idx = order.indexOf(id)
       if (idx !== -1) {
         pendingIndex = idx

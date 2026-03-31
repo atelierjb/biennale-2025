@@ -51,9 +51,9 @@ export default function AccordionItem({ exhibitor, panelId, triggerId }: Props) 
             </div>
           )}
           {images.type === 'portrait-pair' && (
-            <div className="flex flex-wrap gap-4 items-start w-full mb-6">
+            <div className="flex flex-col md:flex-row gap-4 items-start w-full mb-6">
               {images.slides.map((slide, i) => (
-                <div key={i} className="flex-1 min-w-0 max-w-[calc(50%-8px)] max-md:flex-none max-md:max-w-full">
+                <div key={i} className="flex-1">
                   <Image
                     src={slide.src}
                     alt={slide.alt}
@@ -74,7 +74,7 @@ export default function AccordionItem({ exhibitor, panelId, triggerId }: Props) 
                 sizes={images.landscape.sizes}
                 width={1020}
                 height={680}
-                className="w-[66.91%] max-[479px]:w-full h-auto"
+                className="w-full sm:!w-[66.91%]"
               />
               <Image
                 src={images.portrait.src}
@@ -82,7 +82,7 @@ export default function AccordionItem({ exhibitor, panelId, triggerId }: Props) 
                 sizes={images.portrait.sizes}
                 width={550}
                 height={825}
-                className="w-[31.3%] max-[479px]:w-full h-auto"
+                className="w-full sm:!w-[31.3%]"
               />
             </div>
           )}
