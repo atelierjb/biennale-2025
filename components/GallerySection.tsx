@@ -23,6 +23,11 @@ export default function GallerySection({ title, images }: Props) {
     let cleanupListeners: (() => void) | null = null
 
     const build = async () => {
+      // build() is re-invoked on resize; without this every resize leaked a
+      // wheel + resize listener pair (cleanupListeners was overwritten, not run).
+      cleanupListeners?.()
+      cleanupListeners = null
+
       const { gsap, Draggable } = await import('@/lib/gsap').then(m => m.getGsap())
       if (killed) return
 
@@ -70,12 +75,15 @@ export default function GallerySection({ title, images }: Props) {
       })
       draggable = drag
 
-      // Horizontal wheel / trackpad
+      // Horizontal wheel / trackpad.
+      // preventDefault must happen for ANY horizontally-dominant gesture,
+      // including when the strip can't scroll — otherwise the delta reaches the
+      // document and macOS turns it into a back/forward navigation.
       const onWheel = (e: WheelEvent) => {
-        if (!canScroll) return
         const absX = Math.abs(e.deltaX), absY = Math.abs(e.deltaY)
-        if (!(absX > absY * 1.2 && absX > 2)) return
+        if (!(absX > absY && absX > 2)) return // vertical: let the page scroll
         e.preventDefault()
+        if (!canScroll) return
         const curX = (parseFloat(String(gsap.getProperty(track, 'x'))) || 0)
         const nextX = Math.min(maxX, Math.max(minX, curX - e.deltaX))
         gsap.to(track, { x: nextX, duration: 0.12, ease: 'power1.out' })
@@ -118,10 +126,12 @@ export default function GallerySection({ title, images }: Props) {
         ref={rootRef}
         data-start="1"
         tabIndex={0}
-        className="index-gallery relative overscroll-x-contain outline-none focus-visible:outline focus-visible:outline-[rgba(255,255,255,.35)] focus-visible:outline-offset-1"
+        className="index-gallery relative outline-none focus-visible:outline focus-visible:outline-[rgba(255,255,255,.35)] focus-visible:outline-offset-1"
       >
         <div className="index-gallery-viewport overflow-hidden w-full touch-pan-y">
-          <div ref={trackRef} className="index-gallery-track flex items-end gap-[var(--gap)] will-change-transform cursor-grab relative z-[1] touch-none">
+          {/* No touch-action class here: Draggable overwrites it inline with
+              `pan-y` on the track and every descendant. */}
+          <div ref={trackRef} className="index-gallery-track flex items-end gap-[var(--gap)] will-change-transform cursor-grab relative z-[1]">
             {images.map((img, i) => (
               <div key={i} className="index-slide flex-none flex flex-col min-w-0">
                 <Image

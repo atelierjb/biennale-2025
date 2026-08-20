@@ -7,11 +7,19 @@ import LangLink from './LangLink'
 type Props = {
   homeHref: string
   langHref: string
-  daImgSrc: string
-  enImgSrc: string
+  langSwitchLabel: string
+  /** Current language on top, target language below — not DA/EN specifically. */
+  iconTopSrc: string
+  iconBottomSrc: string
 }
 
-export default function IconNav({ homeHref, langHref, daImgSrc, enImgSrc }: Props) {
+export default function IconNav({
+  homeHref,
+  langHref,
+  langSwitchLabel,
+  iconTopSrc,
+  iconBottomSrc,
+}: Props) {
   const navRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -19,9 +27,14 @@ export default function IconNav({ homeHref, langHref, daImgSrc, enImgSrc }: Prop
     if (!nav) return
 
     let ScrollTriggerCleanup: (() => void) | null = null
+    // Assigned only after the import resolves; without this the cleanup fires
+    // against a null and the ScrollTrigger leaks, leaving stale triggers bound
+    // to a #hero element that no longer exists after a remount.
+    let cancelled = false
 
     const run = async () => {
-      const { gsap, ScrollTrigger } = await import('@/lib/gsap').then(m => m.getGsap())
+      const { ScrollTrigger } = await import('@/lib/gsap').then(m => m.getGsap())
+      if (cancelled) return
 
       // Show icon-nav after scrolling past the hero section
       const st = ScrollTrigger.create({
@@ -36,7 +49,10 @@ export default function IconNav({ homeHref, langHref, daImgSrc, enImgSrc }: Prop
 
     run()
 
-    return () => { ScrollTriggerCleanup?.() }
+    return () => {
+      cancelled = true
+      ScrollTriggerCleanup?.()
+    }
   }, [])
 
   return (
@@ -44,9 +60,10 @@ export default function IconNav({ homeHref, langHref, daImgSrc, enImgSrc }: Prop
       <a href={homeHref} className="flex items-center">
         <Image src="/icons/home-icon.svg" alt="return to biennalen.dk" width={32} height={32} className="w-8 h-auto" />
       </a>
-      <LangLink href={langHref} className="flex flex-col items-center gap-1">
-        <Image src={daImgSrc} alt="" width={32} height={32} className="w-8 h-auto" />
-        <Image src={enImgSrc} alt="" width={32} height={32} className="w-8 h-auto" />
+      {/* Both icons are decorative; the link itself carries the accessible name. */}
+      <LangLink href={langHref} aria-label={langSwitchLabel} className="flex flex-col items-center gap-1">
+        <Image src={iconTopSrc} alt="" width={32} height={32} className="w-8 h-auto" />
+        <Image src={iconBottomSrc} alt="" width={32} height={32} className="w-8 h-auto" />
       </LangLink>
     </div>
   )

@@ -3,37 +3,64 @@
 import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import LangLink from './LangLink'
+import { loadLottieData } from '@/lib/lottie'
+
+// The nav logo loops forever, and its host subtree remounts on every language
+// switch. Carrying the playhead across remounts makes the swap look continuous
+// instead of snapping back to frame 0.
+let lastFrame = 0
 
 type Props = {
   homeHref: string
   langHref: string
+  langSwitchLabel: string
   langImgSrc: string
-  langImgAlt: string
   lottieSrc: string
 }
 
-export default function NavWrapper({ homeHref, langHref, langImgSrc, langImgAlt, lottieSrc }: Props) {
+export default function NavWrapper({ homeHref, langHref, langSwitchLabel, langImgSrc, lottieSrc }: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    if (!containerRef.current) return
+    const container = containerRef.current
+    if (!container) return
+
     let anim: ReturnType<typeof import('lottie-web').default.loadAnimation> | null = null
+    // `anim` is only assigned after two awaits, so without this flag the cleanup
+    // runs while it is still null, destroys nothing, and the in-flight load
+    // appends a second <svg> to the same container — two logos.
+    let cancelled = false
 
     const run = async () => {
-      const mod = await import('lottie-web')
-      if (!containerRef.current) return
-      const animData = await fetch(lottieSrc).then(r => r.json())
+      const [mod, animationData] = await Promise.all([
+        import('lottie-web'),
+        loadLottieData(lottieSrc),
+      ])
+      if (cancelled) return
+
+      // loadAnimation appends rather than replaces.
+      container.replaceChildren()
+
       anim = mod.default.loadAnimation({
-        container: containerRef.current,
+        container,
         renderer: 'svg',
         loop: true,
-        autoplay: true,
-        animationData: animData,
+        autoplay: false,
+        animationData,
+      })
+      anim.goToAndPlay(lastFrame, true)
+      anim.addEventListener('enterFrame', () => {
+        if (anim) lastFrame = anim.currentFrame
       })
     }
 
-    run()
-    return () => { anim?.destroy() }
+    run().catch(() => { /* a missing logo must not break the nav */ })
+
+    return () => {
+      cancelled = true
+      anim?.destroy()
+      container.replaceChildren()
+    }
   }, [lottieSrc])
 
   return (
@@ -46,8 +73,9 @@ export default function NavWrapper({ homeHref, langHref, langImgSrc, langImgAlt,
         <div ref={containerRef} className="w-30 sm:w-36 aspect-[145/105] block shrink-0" />
       </a>
 
-      <LangLink href={langHref} className="pointer-events-auto nav:hidden mt-[2vw]">
-        <Image src={langImgSrc} alt={langImgAlt} width={28} height={28} className="w-7 h-auto" />
+      {/* The icon is decorative — the action's name belongs on the link. */}
+      <LangLink href={langHref} aria-label={langSwitchLabel} className="pointer-events-auto nav:hidden mt-[2vw]">
+        <Image src={langImgSrc} alt="" width={28} height={28} className="w-7 h-auto" />
       </LangLink>
     </div>
   )

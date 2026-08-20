@@ -1,9 +1,10 @@
 import type { MetadataRoute } from 'next'
+import { SITE_URL } from '@/lib/constants'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://biennalen-2025.vercel.app/'
+  const lastModified = new Date()
   return [
-    { url: base, lastModified: new Date(), changeFrequency: 'monthly', priority: 1 },
-    { url: `${base}/en`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${SITE_URL}/`, lastModified, changeFrequency: 'monthly', priority: 1 },
+    { url: `${SITE_URL}/en`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
   ]
 }

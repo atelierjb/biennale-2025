@@ -1,14 +1,15 @@
 'use client'
 
-import { useEffect, useId, useRef } from 'react'
-import type { Exhibitor } from '@/lib/exhibitors-da'
+import { useEffect, useRef } from 'react'
+import type { Exhibitor } from '@/lib/exhibitors/types'
 import AccordionItem from './AccordionItem'
+import type { SliderLabels } from './ImageSlider'
 
 type Props = {
   exhibitors: Exhibitor[]
+  sliderLabels: SliderLabels
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Gsap = typeof import('gsap').gsap
 
 function measureInnerHeight(panel: HTMLElement, inner: HTMLElement) {
@@ -40,7 +41,7 @@ function openItem(gsap: Gsap, item: HTMLElement) {
   const panel = item.querySelector<HTMLElement>('.index-accordion-panel')!
   const inner = item.querySelector<HTMLElement>('.index-accordion-panel__inner')!
   const trigger = item.querySelector<HTMLElement>('.index-accordion-trigger')!
-  const icon = item.querySelector<HTMLElement>('.index-accordion-icon, .icon-rot')
+  const icon = item.querySelector<HTMLElement>('.index-accordion-icon')
 
   item.setAttribute('data-state', 'open')
   trigger.setAttribute('aria-expanded', 'true')
@@ -73,7 +74,7 @@ function openItem(gsap: Gsap, item: HTMLElement) {
 function closeItem(gsap: Gsap | null, item: HTMLElement, jump = false) {
   const panel = item.querySelector<HTMLElement>('.index-accordion-panel')!
   const trigger = item.querySelector<HTMLElement>('.index-accordion-trigger')!
-  const icon = item.querySelector<HTMLElement>('.index-accordion-icon, .icon-rot')
+  const icon = item.querySelector<HTMLElement>('.index-accordion-icon')
 
   item.setAttribute('data-state', 'closed')
   trigger.setAttribute('aria-expanded', 'false')
@@ -109,18 +110,23 @@ function toggleItem(gsap: Gsap, item: HTMLElement, mode: string, all: HTMLElemen
   }
 }
 
-export default function IndexSection({ exhibitors }: Props) {
+export default function IndexSection({ exhibitors, sliderLabels }: Props) {
   const sectionRef = useRef<HTMLDivElement>(null)
-  const idPrefix = useId()
 
   useEffect(() => {
     const root = sectionRef.current
     if (!root) return
 
-    let cleanups: (() => void)[] = []
+    const cleanups: (() => void)[] = []
+    // `cleanups` is only filled after the dynamic import resolves, so without
+    // this flag the cleanup runs against an empty array and removes nothing —
+    // and the in-flight run still attaches. React's dev double-invoke then
+    // leaves two click listeners per trigger, so every click toggles twice.
+    let cancelled = false
 
     const run = async () => {
       const { gsap } = await import('gsap')
+      if (cancelled) return
 
       const accordions = gsap.utils.toArray<HTMLElement>('.index-accordion', root)
       accordions.forEach(acc => {
@@ -133,8 +139,11 @@ export default function IndexSection({ exhibitors }: Props) {
           const inner = item.querySelector<HTMLElement>('.index-accordion-panel__inner')
           if (!trigger || !panel || !inner) return
 
-          // Start closed
-          closeItem(null, item, true)
+          // Start closed — unless the language-switch restore already
+          // jump-opened this one. That runs in a layout effect, i.e. before this
+          // effect's `await import('gsap')` resolves, so the state is already
+          // in the DOM by the time we get here.
+          if (item.getAttribute('data-state') !== 'open') closeItem(null, item, true)
 
           const onClick = (e: Event) => {
             if (trigger.tagName === 'A') e.preventDefault()
@@ -155,18 +164,26 @@ export default function IndexSection({ exhibitors }: Props) {
     }
 
     run()
-    return () => { cleanups.forEach(c => c()) }
+    return () => {
+      cancelled = true
+      cleanups.forEach(c => c())
+    }
   }, [])
 
   return (
     <section id="index" className="pb-16 mb-24 px-gutter mx-auto md:pl-[21vw] md:pr-[14vw]" ref={sectionRef}>
       <div data-accordion="single" className="index-accordion border-b border-white">
-        {exhibitors.map((ex, i) => (
+        {/* Ids are derived from the exhibitor id, not useId(): useId encodes the
+            component's position in the React tree, so its output shifts whenever
+            anything above this component changes — which surfaces as a hydration
+            mismatch. The exhibitor id is already stable and unique per page. */}
+        {exhibitors.map(ex => (
           <AccordionItem
             key={ex.id}
             exhibitor={ex}
-            triggerId={`${idPrefix}-${i}-trigger`}
-            panelId={`${idPrefix}-${i}-panel`}
+            sliderLabels={sliderLabels}
+            triggerId={`exhibitor-${ex.id}-trigger`}
+            panelId={`exhibitor-${ex.id}-panel`}
           />
         ))}
       </div>

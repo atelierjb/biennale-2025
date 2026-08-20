@@ -14,9 +14,8 @@ const HERO_IMAGES = [
 
 type Props = {
   dates: string
-  location: React.ReactNode
-  langHref: string
-  langLabel: string
+  /** Rendered one per line. */
+  locationLines: string[]
   partnerLogos: { src: string; href: string; alt: string; sizes: string }[]
 }
 
@@ -31,7 +30,6 @@ const checkIsIOS = () => {
     (navigator.userAgent.includes('Mac') && 'ontouchend' in document)
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Gsap = typeof import('gsap').gsap
 
 function initTilt(gsap: Gsap, root: HTMLElement, stage: HTMLElement, hasFinePointer: boolean, wantsGyro: boolean) {
@@ -109,7 +107,7 @@ function initTilt(gsap: Gsap, root: HTMLElement, stage: HTMLElement, hasFinePoin
       window.addEventListener('deviceorientation', onOrient, true)
       btn.remove()
       cleanups.push(() => window.removeEventListener('deviceorientation', onOrient, true))
-    } catch (_) { /* denied/unsupported */ }
+    } catch { /* denied/unsupported */ }
   }
 
   btn.addEventListener('click', enableMotion, { once: true })
@@ -157,9 +155,11 @@ function buildSVGSlideshow(gsap: Gsap, svg: SVGSVGElement, srcs: string[], prefe
     }
   }
 
+  // No raw `transform` here: on SVG nodes GSAP writes it as an *attribute*,
+  // producing `transform="null"` and a console error per element per tween.
+  // force3D covers the layer promotion, as does .hero-eye__svg in globals.css.
   gsap.set([group, ...photos], {
     force3D: true,
-    transform: 'translateZ(0)',
     willChange: 'opacity,transform',
     backfaceVisibility: 'hidden',
   })
@@ -277,7 +277,7 @@ function buildHTMLSlideshow(gsap: Gsap, root: HTMLElement, svg: SVGSVGElement, s
   return () => { timer?.kill(); cleanup() }
 }
 
-export default function HeroSection({ dates, location, partnerLogos }: Props) {
+export default function HeroSection({ dates, locationLines, partnerLogos }: Props) {
   const eyeRef = useRef<HTMLDivElement>(null)
   const stageRef = useRef<HTMLDivElement>(null)
   const svgRef = useRef<SVGSVGElement>(null)
@@ -295,9 +295,14 @@ export default function HeroSection({ dates, location, partnerLogos }: Props) {
 
     let cleanupTilt = () => { }
     let cleanupSlideshow = () => { }
+    // Both are assigned after the import resolves, so the cleanup would
+    // otherwise call the no-op placeholders and leave the tilt listeners and
+    // slideshow timers running against a detached DOM.
+    let cancelled = false
 
     const run = async () => {
       const { gsap } = await import('gsap')
+      if (cancelled) return
 
       if (!prefersReduce) {
         cleanupTilt = initTilt(gsap, root, stage, hasFinePointer, wantsGyro)
@@ -313,6 +318,7 @@ export default function HeroSection({ dates, location, partnerLogos }: Props) {
     run()
 
     return () => {
+      cancelled = true
       cleanupTilt()
       cleanupSlideshow()
     }
@@ -388,7 +394,11 @@ export default function HeroSection({ dates, location, partnerLogos }: Props) {
       {/* Date / location + mobile logos */}
       <div className="absolute right-gutter bottom-gutter flex flex-col items-center sm:items-end gap-2 text-center sm:text-right z-10 max-md:right-4 max-md:bottom-12 max-md:left-4 max-md:text-xl text-2xl uppercase tracking-[-0.005em] font-bold leading-[1]">
         <div className="opacity-100">{dates}</div>
-        <div className="opacity-100">{location}</div>
+        <div className="opacity-100">
+          {locationLines.map((line, i) => (
+            <span key={i} className="block">{line}</span>
+          ))}
+        </div>
         <div className="hidden max-md:flex max-md:static max-md:mt-6 max-md:justify-center max-md:gap-6 max-md:px-6">
           {partnerLogos.map(logo => (
             <a key={logo.href} href={logo.href} target="_blank" rel="noopener noreferrer" className="block">

@@ -1,9 +1,10 @@
 import Image from 'next/image'
 
 type Props = {
-  largeText: React.ReactNode
-  col1: React.ReactNode
-  col2: React.ReactNode
+  largeText: string
+  /** One string per paragraph. */
+  col1: string[]
+  col2: string[]
   badgeSrc: string
   badgeAlt: string
   prizeLabel: string
@@ -30,8 +31,13 @@ export default function IntroSection({
       <div className="text-3xl/[1] md:text-[3.35rem]/[1] font-bold mb-6 md:mb-12 tracking-[-0.01em]">{largeText}</div>
 
       <div className="grid grid-cols-2 gap-8 mb-12 max-md:grid-cols-1">
-        <div className="text-base/[1.15] md:text-2xl/[1.15] font-semibold flex flex-col gap-4 md:pr-[2.5rem]">{col1}</div>
-        <div className="text-base/[1.15] md:text-2xl/[1.15] font-semibold flex flex-col gap-4 md:pr-[2.5rem]">{col2}</div>
+        {[col1, col2].map((column, c) => (
+          <div key={c} className="text-base/[1.15] md:text-2xl/[1.15] font-semibold flex flex-col gap-4 md:pr-[2.5rem]">
+            {column.map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
+        ))}
       </div>
 
       <Image src={badgeSrc} alt={badgeAlt} width={140} height={140} className="w-full h-auto mb-24" />

@@ -5,6 +5,14 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ['gsap'],
   },
   async headers() {
+    // Never in development. `headers()` runs in dev too, but dev chunks are not
+    // content-hashed the way production ones are — Turbopack reuses the same
+    // filename as a module's contents change. Serving those as `immutable` makes
+    // the browser cache stale JavaScript for a year and ignore reloads, which
+    // surfaces as impossible errors: symbols that no longer exist in the source,
+    // or hydration mismatches between fresh HTML and a cached bundle.
+    if (process.env.NODE_ENV !== 'production') return []
+
     return [
       {
         // Immutable cache for content-hashed Next.js static assets

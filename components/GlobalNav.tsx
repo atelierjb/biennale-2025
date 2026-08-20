@@ -1,40 +1,50 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
 import NavWrapper from './NavWrapper'
 import IconNav from './IconNav'
 import StackedNav from './StackedNav'
+import { langHref, otherLang, type Lang } from '@/lib/i18n'
+import type { NavId } from '@/lib/copy'
+import { HOME_HREF } from '@/lib/constants'
 
-export default function GlobalNav() {
-  const pathname = usePathname()
-  const isEn = pathname.startsWith('/en')
+type Props = {
+  lang: Lang
+  navLabels: Record<NavId, string>
+  langSwitchLabel: string
+}
 
-  const langHref     = isEn ? '/' : '/en'
-  const langImgSrc   = isEn ? '/icons/da-outlined.svg' : '/icons/eng-outlined.svg'
-  const langImgAlt   = isEn ? 'Dansk' : 'English'
-  const daImgSrc     = isEn ? '/icons/eng-filled.svg' : '/icons/da-filled.svg'
-  const enImgSrc     = isEn ? '/icons/da-outlined.svg' : '/icons/eng-outlined.svg'
-  const stackedLabels = isEn
-    ? { intro: 'introduction', gallery: 'gallery', index: 'exhibitors 2025', colophon: 'colophon' }
-    : { intro: 'introduktion', gallery: 'galleri', index: 'udstillere 2025', colophon: 'kolofon' }
+/**
+ * `lang` arrives as a prop from the layout rather than being parsed out of
+ * usePathname(). The icons are ordered current-language-first; both are
+ * decorative, so the accessible name lives on the link itself.
+ */
+export default function GlobalNav({ lang, navLabels, langSwitchLabel }: Props) {
+  const target = otherLang(lang)
+  const href = langHref(target)
+
+  const iconTopSrc = lang === 'en' ? '/icons/eng-filled.svg' : '/icons/da-filled.svg'
+  const iconBottomSrc = lang === 'en' ? '/icons/da-outlined.svg' : '/icons/eng-outlined.svg'
 
   return (
     <>
       <NavWrapper
-        homeHref="https://biennalen.dk"
-        langHref={langHref}
-        langImgSrc={langImgSrc}
-        langImgAlt={langImgAlt}
+        homeHref={HOME_HREF}
+        langHref={href}
+        langSwitchLabel={langSwitchLabel}
+        langImgSrc={iconBottomSrc}
         lottieSrc="/documents/biennale-white-logo-sm.json"
       />
+      {/* Keyed on lang: both components cache DOM refs and register listeners in
+          mount-only effects, so they must rebuild when the page swaps. */}
       <IconNav
-        key={pathname}
-        homeHref="https://biennalen.dk"
-        langHref={langHref}
-        daImgSrc={daImgSrc}
-        enImgSrc={enImgSrc}
+        key={lang}
+        homeHref={HOME_HREF}
+        langHref={href}
+        langSwitchLabel={langSwitchLabel}
+        iconTopSrc={iconTopSrc}
+        iconBottomSrc={iconBottomSrc}
       />
-      <StackedNav key={pathname + '-nav'} labels={stackedLabels} />
+      <StackedNav key={`${lang}-nav`} labels={navLabels} />
     </>
   )
 }

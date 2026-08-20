@@ -1,14 +1,15 @@
 import Image from 'next/image'
-import type { Exhibitor } from '@/lib/exhibitors-da'
-import ImageSlider from './ImageSlider'
+import type { Exhibitor } from '@/lib/exhibitors/types'
+import ImageSlider, { type SliderLabels } from './ImageSlider'
 
 type Props = {
   exhibitor: Exhibitor
+  sliderLabels: SliderLabels
   panelId: string
   triggerId: string
 }
 
-export default function AccordionItem({ exhibitor, panelId, triggerId }: Props) {
+export default function AccordionItem({ exhibitor, sliderLabels, panelId, triggerId }: Props) {
   const { images } = exhibitor
 
   return (
@@ -47,7 +48,7 @@ export default function AccordionItem({ exhibitor, panelId, triggerId }: Props) 
           {/* Images */}
           {images.type === 'slider' && (
             <div className="w-full mb-6">
-              <ImageSlider slides={images.slides} isPortrait={false} />
+              <ImageSlider slides={images.slides} labels={sliderLabels} isPortrait={false} />
             </div>
           )}
           {images.type === 'portrait-pair' && (
@@ -91,13 +92,23 @@ export default function AccordionItem({ exhibitor, panelId, triggerId }: Props) 
           <div className="grid grid-cols-1 sm:grid-cols-2 mb-8 gap-5">
             <div className="flex flex-col gap-2">
               <div className="font-bold text-2xl/[1] md:text-3xl/[1] uppercase tracking-[-0.0025em]">{exhibitor.workTitle}</div>
+              {/* One element per line — the source data is multi-line for 10 of
+                  26 entries and previously collapsed onto a single run-on line. */}
               <div className="text-lg/[1.15] md:text-xl/[1.15] font-semibold flex flex-col gap-2 uppercase max-w-[80%]">
-                {exhibitor.materials}
-                {exhibitor.dimensions ? `\n${exhibitor.dimensions}` : ''}
+                <p>{exhibitor.materials}</p>
+                {exhibitor.dimensions.length > 0 && (
+                  <p>
+                    {exhibitor.dimensions.map((line, i) => (
+                      <span key={i} className="block">{line}</span>
+                    ))}
+                  </p>
+                )}
               </div>
             </div>
             <div className="text-base/[1.25] md:text-xl/[1.2] font-semibold flex flex-col gap-2">
-              {exhibitor.description}
+              {exhibitor.description.map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+              ))}
             </div>
           </div>
         </div>

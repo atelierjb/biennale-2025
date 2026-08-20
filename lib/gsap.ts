@@ -6,7 +6,6 @@ let registered = false
 export async function getGsap() {
   const { gsap } = await import('gsap')
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [{ ScrollTrigger }, draggableMod, inertiaMod] = await Promise.all([
     import('gsap/ScrollTrigger'),
     import('gsap/dist/Draggable') as Promise<any>, // eslint-disable-line @typescript-eslint/no-explicit-any

@@ -11,6 +11,21 @@
 /* BASE */
 html {
   scroll-behavior: smooth;
+  /* Hide the scrollbar. The viewport is the only scroll container in the app —
+     body's overflow-x propagates to it and nothing else declares overflow:auto|scroll. */
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Suppress the browser's horizontal swipe-to-navigate / rubber-band gesture.
+   This has to live on the viewport scroller: the gallery carousel is
+   transform-based, not a scroll container, so overscroll-behavior there is inert. */
+html,
+body {
+  overscroll-behavior-x: none;
 }
 
 body {
@@ -19,115 +34,25 @@ body {
   line-height: 1.2;
 }
 
-/* TYPOGRAPHY — non-standard breakpoints, keep in CSS */
-.large-text {
-  font-size: 3.35rem;
-  font-weight: 700;
-  line-height: 1;
-  margin-bottom: 4vw;
+/* PAGE TRANSITION — JS removes [data-transition] to reveal.
+   Fails open: if the GSAP chunk never loads, the content is still visible. */
+.main[data-transition="pending"] {
+  opacity: 0;
 }
 
-.medium-text {
-  font-size: 2.75rem;
-  font-weight: 700;
-  line-height: 1.05;
+@media (prefers-reduced-motion: reduce) {
+  .main {
+    opacity: 1 !important;
+  }
 }
 
-.text-regular {
-  font-size: 1.35rem;
-  font-weight: 600;
-  line-height: 1.15;
-  letter-spacing: 0.075rem;
-}
-
+/* TYPOGRAPHY */
 .label-xs {
   font-size: 0.7525rem;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-}
-
-.nominee-text-style {
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: 0.05rem;
-}
-
-.nominee-text-style.big {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.index-accordion-panel__inner-title {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  width: 75%;
-}
-
-.index-accordion-panel__inner-details {
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 1;
-  white-space: pre-line;
-  width: 80%;
-}
-
-.index-accordion-panel__inner-description {
-  font-size: 1.35rem;
-  font-weight: 600;
-  line-height: 1.15;
-  letter-spacing: 0.075rem;
-  white-space: pre-line;
-}
-
-.index-accordion-title {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-@media (max-width: 991px) {
-  .large-text {
-    font-size: 2.75rem;
-  }
-
-  .text-regular {
-    font-size: 1rem;
-    letter-spacing: 0;
-  }
-
-  .medium-text {
-    font-size: 2.25rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .large-text {
-    font-size: 2rem;
-  }
-
-  .medium-text {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 479px) {
-  .large-text {
-    font-size: 1.75rem;
-    margin-bottom: 8vw;
-  }
-
-  .text-regular {
-    font-size: .9rem;
-  }
-
-  .medium-text {
-    font-size: 1.5rem;
-  }
 }
 
 /* ICON NAV — JS adds/removes .is-on */
